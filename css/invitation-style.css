@@ -77,8 +77,6 @@
     --border: 2px solid red;
     --dorado: hsl(60, 70%, 90%);
 
-
-
     /* MEDIDAS SOBRE */
     --closed-height: 20rem;
     --opened-height: 30rem;
@@ -87,17 +85,16 @@
 
 body {
     margin: 0;
-    /* padding: 0 1rem; */
     background-color: white;
 }
 
 main {
-    width: 95%;
+    max-width: 80%;
     background-color: var(--beigegpt);
-    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 20%);
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 50%);
     margin-left: auto;
     margin-right: auto;
-}
+}   
 
 a {
     text-decoration: none;
@@ -281,9 +278,7 @@ a {
 #nombres-esposos-card {
     text-align: center;
     margin: 0;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    padding: 0 3rem;
+    padding: 5rem 3rem;
 }
 
 #nombres-esposos-card #logo-ze {
@@ -336,12 +331,12 @@ a {
 /* ------------- TIMER CARD -------------- */
 
 #timer-card {
-    /* border: var(--border); */
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     text-align: center;
     align-content: center;
     background-color: var(--olivogpt);
+    margin: 5rem 0;
 }
 
 #timer-card #timer-decoration {
@@ -423,19 +418,15 @@ a {
 /* -------------- CEREMONIA CARD -------------- */
 
 #ceremonia-card {
-    /* border: var(--border); */
+    width: 100%;
+    min-height: 65rem;
+    padding: 0 5rem;
     margin: 0 auto;
-    margin-top: 5rem;
     align-items: center;
     align-content: center;
     text-align: center;
     background-color: var(--terracotagpt);
     color: var(--beigegpt);
-    padding: 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    max-width: 40rem;
-    height: auto;
 }
 
 #ceremonia-card #ceremonia-decoration-border-t,
@@ -547,18 +538,15 @@ a {
 /* --------------- CELEBRACION CARD -------------- */
 
 #celebration-card {
-    /* border: var(--border); */
+    width: 100%;
+    min-height: 65rem;
+    padding: 0 5rem;
     margin: 0 auto;
     align-items: center;
     align-content: center;
     text-align: center;
     background-color: var(--olivogpt);
     color: var(--beigegpt);
-    padding: 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    max-width: 40rem;
-    height: auto;
 }
 
 #celebration-card #celebration-decoration-border-t {
@@ -673,17 +661,14 @@ a {
 
 
 #vestuario-card {
-    /* border: var(--border); */
+    width: 100%;
+    min-height: 65rem;
+    padding: 0 5rem;
     margin: 0 auto;
     align-items: center;
     align-content: center;
     text-align: center;
     background-color: var(--beigegpt);
-    padding: 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    max-width: 40rem;
-    height: auto;
 }
 
 #vestuario-card #vestuario-decoration-border-t {
@@ -718,36 +703,25 @@ a {
 }
 
 #vestuario-card #vestuario-label-1 {
+    font-family: 'fuente3';
     font-size: 1.5em;
     color: var(--olivogpt);
-    font-family: 'fuente3';
-    margin: 0 auto;
+    margin: 0;
 }
 
-#vestuario-card #vestuario-label-2 {
-    font-size: 2em;
-    color: var(--olivogpt);
-    font-family: 'fuente3';
-    margin: 2rem auto;
-}
-
-#vestuario-card #vestuario-label-3 {
-    font-size: 2em;
-    color: var(--olive);
-    font-family: 'fuente7';
-}
-
+#vestuario-card #vestuario-label-2,
 #vestuario-card #vestuario-label-4 {
+    font-family: 'fuente3';
     font-size: 2em;
     color: var(--olivogpt);
-    font-family: 'fuente3';
     margin: 2rem auto;
 }
 
+#vestuario-card #vestuario-label-3,
 #vestuario-card #vestuario-label-5 {
+    font-family: 'fuente7';
     font-size: 2em;
     color: var(--olive);
-    font-family: 'fuente7';
 }
 
 #vestuario-card #vestuario-palette-box {
@@ -883,9 +857,7 @@ img {
 
     /* NOMBRES ESPOSOS CARD */
     #nombres-esposos-card {
-        padding: 0 1.5rem;
-        margin-top: 3rem;
-        margin-bottom: 6rem;
+        
     }
 
     #nombres-esposos-card #logo-ze {
@@ -928,9 +900,7 @@ img {
     #ceremonia-card,
     #celebration-card,
     #vestuario-card {
-        max-width: 100%;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        min-height: 65rem;
     }
 
     #ceremonia-card #ceremonia-title,
@@ -959,7 +929,7 @@ img {
 
     #vestuario-card #vestuario-label-2,
     #vestuario-card #vestuario-label-4 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #ceremonia-card #ceremonia-label-fecha,
@@ -992,7 +962,6 @@ img {
 
 
 @media (max-width: 500px) {
-
     #header-card #header-label-1,
     #header-card #header-label-2 {
         font-size: 1.5em;
