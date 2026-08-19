@@ -550,11 +550,7 @@ a {
 
 
 
-
-
 /* --------------- VESTUARIO CARD -------------- */
-
-
 
 #vestuario-card #vestuario-palette-box {
     margin: 0;
@@ -580,52 +576,6 @@ a {
     background-color: var(--olivogpt);
 }
 
-
-
-
-
-/* ---------- LINE DECORATION -----------  */
-/* 
-.line-decoration-card {
-    display: block;
-    margin: 0 auto;
-    padding: 3rem 0;
-    background-color: var(--beigegpt);
-    text-align: center;
-}
-
-.line-decoration-card .line-decoration-linea {
-    display: inline-block;
-    width: 10rem;
-    height: .2rem;
-    background-color: var(--olivogpt);
-    margin: 0 auto;
-}
-
-.line-decoration-card .line-decoration-linea-m {
-    display: inline-block;
-    width: 5rem;
-    height: .2rem;
-    background-color: var(--olivogpt);
-    margin: 0 auto;
-}
-
-.line-decoration-card .line-decoration-punto {
-    display: inline-block;
-    width: .4rem;
-    height: .4rem;
-    border-radius: 50%;
-    background-color: var(--olivogpt);
-    margin: 0 1rem;
-}
-
-#flores-decoration-buttom {
-    display: block;
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-} */
 
 
 
