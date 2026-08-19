@@ -394,8 +394,6 @@ a {
 
 #timer-card .punto {
     display: inline-block;
-    /* width: .4rem;
-    height: .4rem; */
     border-radius: 50%;
     background-color: var(--terracotagpt);
     margin: 0;
