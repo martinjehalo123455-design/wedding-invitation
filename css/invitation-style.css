@@ -86,12 +86,13 @@
 body {
     margin: 0;
     background-color: white;
+    background-image: url(/img/textura-papel.jpg);
 }
 
 main {
     max-width: 80%;
     background-color: var(--beigegpt);
-    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 50%);
+    box-shadow: 0px 0px 30px 3px rgb(0 0 0 / 50%);
     margin-left: auto;
     margin-right: auto;
 }   
@@ -158,10 +159,7 @@ a {
     min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    background: url("../img/propuesta-img.jpg"), linear-gradient(
-        hsla(0,100%, 50%,.3),
-        hsla(60,100%,50%,.3)
-    );
+    background: url("../img/propuesta-img.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,7 +167,7 @@ a {
     align-content: center ;
     color: #fff;
     overflow: hidden;
-    padding-top: 3rem;
+    padding: 3rem;
 }
 
 #header-card #corazon-bordado-img {
@@ -200,7 +198,6 @@ a {
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 0 20rem;
 }
 
 
@@ -417,7 +414,9 @@ a {
 
 /* -------------- CEREMONIA CARD -------------- */
 
-#ceremonia-card {
+#ceremonia-card,
+#celebration-card,
+#vestuario-card {
     width: 100%;
     min-height: 65rem;
     padding: 0 5rem;
@@ -425,78 +424,97 @@ a {
     align-items: center;
     align-content: center;
     text-align: center;
+}
+
+#ceremonia-card {
     background-color: var(--terracotagpt);
     color: var(--beigegpt);
 }
 
-#ceremonia-card #ceremonia-decoration-border-t,
-#ceremonia-card #ceremonia-decoration-border-b  {
-    display: inline-block;
-    width: 50%;
-    margin: 1rem auto;
+#celebration-card {
+    background-color: var(--olivogpt);
+    color: var(--beigegpt);
 }
 
-#ceremonia-card .icon {
+#vestuario-card {
+    background-color: var(--beigegpt);
+    color: var(--olivogpt);
+}
+
+#ceremonia-card .icon,
+#celebration-card .icon,
+#vestuario-card .icon {
     max-width: 4rem;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-#ceremonia-card #ceremonia-title {
-    font-size: 2.5em;
+#ceremonia-card #ceremonia-title,
+#celebration-card #celebration-title,
+#vestuario-card #vestuario-title {
     font-family: 'fuente1';
-    margin: 3rem auto;
-    width: 40%;
+    font-size: 2.5em;
     padding: 1rem 0;
-    margin: 1rem;
+    margin: 3rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-#ceremonia-card #ceremonia-label-1 {
-    font-size: 1.5em;
+#ceremonia-card #ceremonia-label-1,
+#celebration-card #celebration-label-1,
+#vestuario-card #vestuario-label-1,
+#vestuario-card #vestuario-label-2,
+#vestuario-card #vestuario-label-4 {
+    font-size: 2em;
     font-family: 'fuente3';
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 #ceremonia-card #ceremonia-label-2,
-#ceremonia-card #ceremonia-label-3 {
+#ceremonia-card #ceremonia-label-3,
+#celebration-card #celebration-label-2,
+#celebration-card #celebration-label-3,
+#vestuario-card #vestuario-label-3,
+#vestuario-card #vestuario-label-5 {
     font-size: 2.4em;
     font-family: 'fuente7';
     margin: 2rem auto;
 }
 
-#ceremonia-card #ceremonia-date-box {
+#vestuario-card #vestuario-label-3,
+#vestuario-card #vestuario-label-5 {
+    color: var(--olive);
+}
+
+#ceremonia-card #ceremonia-date-box,
+#celebration-card #celebration-date-box {
     margin: 2rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#ceremonia-card #ceremonia-label-fecha {
+#ceremonia-card #ceremonia-label-fecha,
+#ceremonia-card #ceremonia-label-hora,
+#celebration-card #celebration-label-fecha,
+#celebration-card #celebration-label-hora {
     font-family: 'fuente1';
     font-size: 3.5em;
     display: inline-block;
     margin: 0;
 }
 
-#ceremonia-card #ceremonia-label-hora {
-    font-family: 'fuente1';
-    font-size: 3.5em;
-    display: inline-block;
-    margin: 0;
-}
-
-#ceremonia-card #ceremonia-decoration {
+#ceremonia-card #ceremonia-decoration,
+#celebration-card #celebration-decoration {
     display: inline-block;
     margin: 4rem;
     margin-bottom: auto;
     margin-top: auto;
 }
 
-#ceremonia-card #ceremonia-decoration .decoration-linea-t,
-#ceremonia-card #ceremonia-decoration .decoration-linea-b {
+.decoration-linea-t,
+.decoration-linea-b {
     width: .2rem;
     height: 2rem;
     background-color: var(--beigegpt);
@@ -505,7 +523,7 @@ a {
     margin-right: auto;
 }
 
-#ceremonia-card #ceremonia-decoration .decoration-punto {
+.decoration-punto {
     width: .4rem;
     height: .4rem;
     border-radius: 50%;
@@ -515,7 +533,8 @@ a {
     margin-right: auto;
 }
 
-#ceremonia-card #ceremonia-button {
+#ceremonia-card #ceremonia-button,
+#celebration-card #celebration-button {
     width: 50%;
     height: 4rem;
     background-color: transparent;
@@ -533,196 +552,9 @@ a {
 
 
 
-
-
-/* --------------- CELEBRACION CARD -------------- */
-
-#celebration-card {
-    width: 100%;
-    min-height: 65rem;
-    padding: 0 5rem;
-    margin: 0 auto;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    background-color: var(--olivogpt);
-    color: var(--beigegpt);
-}
-
-#celebration-card #celebration-decoration-border-t {
-    display: inline-block;
-    width: 50%;
-    margin: 1rem auto;
-}
-
-#celebration-card #celebration-decoration-border-b {
-    display: inline-block;
-    width: 50%;
-    margin: 1rem auto;
-}
-
-#celebration-card .icon {
-    max-width: 4rem;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-#celebration-card #celebration-title {
-    font-size: 2.5em;
-    font-family: 'fuente1';
-    width: 40%;
-    margin: 3rem auto;
-    padding: 1rem 0;
-    margin: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#celebration-card #celebration-label-1 {
-    font-size: 1.5em;
-    font-family: 'fuente3';
-    margin: 0 auto;
-}
-
-#celebration-card #celebration-label-2,
-#celebration-card #celebration-label-3 {
-    font-size: 2.4em;
-    font-family: 'fuente7';
-    margin: 2rem auto;
-}
-
-#celebration-card #celebration-date-box {
-    margin: 2rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#celebration-card #celebration-label-fecha,
-#celebration-card #celebration-label-hora {
-    font-family: 'fuente1';
-    font-size: 3.5em;
-    display: inline-block;
-    margin: 0;
-}
-
-#celebration-card #celebration-decoration {
-    display: inline-block;
-    margin: 4rem;
-    margin-bottom: auto;
-    margin-top: auto;
-}
-
-#celebration-card #celebration-decoration .decoration-linea-t,
-#celebration-card #celebration-decoration .decoration-linea-b {
-    width: .2rem;
-    height: 2rem;
-    background-color: var(--beigegpt);
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#celebration-card #celebration-decoration .decoration-punto {
-    width: .4rem;
-    height: .4rem;
-    border-radius: 50%;
-    background-color: var(--beigegpt);
-    margin: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#celebration-label-direccion {
-    margin-top: 5rem;
-}
-
-#celebration-card #celebration-button {
-    width: 50%;
-    height: 4rem;
-    background-color: var(--olivogpt);
-    color: var(--beigegpt);
-    font-family: 'fuente5';
-    font-size: 1.5em;
-    text-decoration: none;
-    border-radius: .3rem;
-    border: 0;
-    display: block;
-    margin: 2rem auto;
-}
-
-
-
-
-
-
 /* --------------- VESTUARIO CARD -------------- */
 
 
-#vestuario-card {
-    width: 100%;
-    min-height: 65rem;
-    padding: 0 5rem;
-    margin: 0 auto;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    background-color: var(--beigegpt);
-}
-
-#vestuario-card #vestuario-decoration-border-t {
-    display: inline-block;
-    width: 50%;
-    margin: 1rem auto;
-}
-
-#vestuario-card #vestuario-decoration-border-b {
-    display: inline-block;
-    width: 50%;
-    margin: 1rem auto;
-}
-
-#vestuario-card .icon {
-    max-width: 4rem;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-#vestuario-card #vestuario-title {
-    font-size: 2.5em;
-    font-family: 'fuente1';
-    width: 40%;
-    margin: 3rem auto;
-    padding: 1rem 0;
-    margin: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--olivogpt);
-}
-
-#vestuario-card #vestuario-label-1 {
-    font-family: 'fuente3';
-    font-size: 1.5em;
-    color: var(--olivogpt);
-    margin: 0;
-}
-
-#vestuario-card #vestuario-label-2,
-#vestuario-card #vestuario-label-4 {
-    font-family: 'fuente3';
-    font-size: 2em;
-    color: var(--olivogpt);
-    margin: 2rem auto;
-}
-
-#vestuario-card #vestuario-label-3,
-#vestuario-card #vestuario-label-5 {
-    font-family: 'fuente7';
-    font-size: 2em;
-    color: var(--olive);
-}
 
 #vestuario-card #vestuario-palette-box {
     margin: 0;
@@ -753,8 +585,7 @@ a {
 
 
 /* ---------- LINE DECORATION -----------  */
-
-
+/* 
 .line-decoration-card {
     display: block;
     margin: 0 auto;
@@ -788,14 +619,13 @@ a {
     margin: 0 1rem;
 }
 
-
 #flores-decoration-buttom {
     display: block;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-}
+} */
 
 
 
