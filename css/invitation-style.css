@@ -587,10 +587,8 @@ img {
 
     #ceremonia-card #ceremonia-label-1,
     #celebration-card #celebration-label-1,
-    #vestuario-card #vestuario-label-1,
-    #vestuario-card #vestuario-label-2,
-    #vestuario-card #vestuario-label-4 {
-        font-size: 1.3em;
+    #vestuario-card #vestuario-label-1 {
+        font-size: 1.6em;
     }
 
     #ceremonia-card #ceremonia-label-2,
@@ -599,7 +597,9 @@ img {
     #celebration-card #celebration-label-2,
     #celebration-card #celebration-label-3,
     #celebration-card #celebration-label-4,
+    #vestuario-card #vestuario-label-2,
     #vestuario-card #vestuario-label-3,
+    #vestuario-card #vestuario-label-4,
     #vestuario-card #vestuario-label-5 {
         font-size: 1.8em;
     }
