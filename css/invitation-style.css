@@ -520,30 +520,6 @@ img {
         padding: 0 5rem;
     }
 
-    /* VERSICULO CARD */
-/* 
-    #versiculo-card {
-        height: auto;
-        padding: 4rem 2.5rem;
-        font-size: 1.1em;
-    }
-
-    #versiculo-card #versiculo-label-1 {
-        padding: 0 1rem;
-    }
-
-    #versiculo-card #flores-decoration-corner-1,
-    #versiculo-card #flores-decoration-corner-3 {
-        max-width: 10rem;
-    }
-
-    #flores-decoration-top {
-        width: 60%;
-    }
-    */
-
-
-
     /* NOMBRES ESPOSOS CARD */
     #nombres-esposos-card {
         height: 50rem;
