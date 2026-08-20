@@ -14,13 +14,6 @@
     }
 
     @font-face {
-        font-family: 'fuente2';
-        src: url(../fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Thin.ttf);
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
         font-family: 'fuente3';
         src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
         font-weight: normal;
@@ -40,11 +33,6 @@
     }
 
     @font-face {
-        font-family: 'fuente6';
-        src: url(../fonts/Great_Vibes/GreatVibes-Regular.ttf);
-    }
-
-    @font-face {
         font-family: 'fuente7';
         src: url(../fonts/Parisienne/Parisienne-Regular.ttf);
     }
@@ -53,33 +41,14 @@
 /********* COLORES *********/
 :root {
     /* COLORES */
-    --terracota: #C65D3B;
-    --terracotafuerte: #A3472C;
-    --sienna: #A0522D;
-    --chocolate: #D2691E;
-    --saddlebrown: #8B4513;
     --terracotagpt: #cb997e; /* Terracota */
     --terracota-oscuro: #5c280c;
-    --olivo: #556B2F;
     --olive:#808000;
     --olivogpt: #6b705c; /* Títulos */
-    --olivo-oscuro: #38471F;
-    --olivo-dark: #232E0F;
     --beige1: #E8D8C3;
-    --beige2: #F2EED9;
     --beigegpt: #f5f1e8; /* Fondo */
-    --cornsilk: #FFF8DC;
-    --beigelight: #F5F5DC;
-    --burlywood: #DEB887;
-    --humo: #f5f5f5;
-    --seco: #888; /* Parrafos */
     --gris: #3e3e3e; /* Descripción */
-    --border: 2px solid red;
     --dorado: hsl(60, 70%, 90%);
-
-    /* MEDIDAS SOBRE */
-    --closed-height: 20rem;
-    --opened-height: 30rem;
 }
 
 
@@ -157,8 +126,8 @@ a {
     position: relative;
     z-index: 1;
     min-height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+    padding: 3rem;
     background: url("../img/propuesta-img.jpg");
     background-size: cover;
     background-position: center;
@@ -167,7 +136,6 @@ a {
     align-content: center ;
     color: #fff;
     overflow: hidden;
-    padding: 3rem;
 }
 
 #header-card #corazon-bordado-img {
@@ -328,14 +296,13 @@ a {
 /* ------------- TIMER CARD -------------- */
 
 #timer-card {
+    margin: 0;
     padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
     align-content: center;
     background-color: var(--olivogpt);
-    margin: 0;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
+    width: 100%;
 }
 
 #timer-card #timer-decoration {
@@ -412,13 +379,13 @@ a {
 
 
 
-/* -------------- CEREMONIA CARD -------------- */
+/* -------------- CEREMONIA | CELEBRATION | VESTUARIO CARDS -------------- */
 
 #ceremonia-card,
 #celebration-card,
 #vestuario-card {
     width: 100%;
-    min-height: 75rem;
+    height: 83rem;
     padding: 0 5rem;
     margin: 0 auto;
     align-items: center;
@@ -454,7 +421,7 @@ a {
 #celebration-card #celebration-title,
 #vestuario-card #vestuario-title {
     font-family: 'fuente1';
-    font-size: 2.5em;
+    font-size: 3em;
     padding: 1rem 0;
     margin: 8rem auto;
 }
@@ -539,11 +506,12 @@ a {
     color: white;
     border: 0;
     font-family: 'fuente5';
-    font-size: 1.5em;
+    font-size: 3em;
     text-decoration: none;
     border-radius: .3rem;
     display: block;
-    margin: 2rem auto;
+    margin: auto;
+    margin-top: 10rem;
 }
 
 
@@ -598,22 +566,23 @@ img {
     /* HEADER CARD */
     #header-card #corazon-bordado-img {
         width: 100%;
-        max-width: 30rem;
+        max-width: 25rem;
     }
 
     #header-card #sobre-opened-img {
         height: auto;
         width: 100%;
-        max-width: 30rem;
+        max-width: 25rem;
     }
 
     #header-card #header-label-1,
     #header-card #header-label-2 {
-        font-size: 3em;
+        font-size: 2em;
         padding: 0 5rem;
     }
 
     /* VERSICULO CARD */
+/* 
     #versiculo-card {
         height: auto;
         padding: 4rem 2.5rem;
@@ -632,8 +601,15 @@ img {
     #flores-decoration-top {
         width: 60%;
     }
+    */
+
+
 
     /* NOMBRES ESPOSOS CARD */
+    #nombres-esposos-card {
+        height: 50rem;
+    }
+
     #nombres-esposos-card #logo-ze {
         min-width: 0;
         width: 40%;
@@ -674,7 +650,13 @@ img {
     #ceremonia-card,
     #celebration-card,
     #vestuario-card {
-        min-height: 65rem;
+        height: 60rem;
+    }
+
+    #ceremonia-card .icon,
+    #celebration-card .icon,
+    #vestuario-card .icon {
+        height: 4rem;
     }
 
     #ceremonia-card #ceremonia-title,
@@ -682,14 +664,16 @@ img {
     #vestuario-card #vestuario-title {
         width: 100%;
         max-width: 30rem;
-        font-size: 3em;
+        font-size: 1.8em;
         margin: 3rem auto;
     }
 
     #ceremonia-card #ceremonia-label-1,
     #celebration-card #celebration-label-1,
-    #vestuario-card #vestuario-label-1 {
-        font-size: 2em;
+    #vestuario-card #vestuario-label-1,
+    #vestuario-card #vestuario-label-2,
+    #vestuario-card #vestuario-label-4 {
+        font-size: 1.3em;
     }
 
     #ceremonia-card #ceremonia-label-2,
@@ -698,19 +682,14 @@ img {
     #celebration-card #celebration-label-3,
     #vestuario-card #vestuario-label-3,
     #vestuario-card #vestuario-label-5 {
-        font-size: 2.5em;
-    }
-
-    #vestuario-card #vestuario-label-2,
-    #vestuario-card #vestuario-label-4 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     #ceremonia-card #ceremonia-label-fecha,
     #ceremonia-card #ceremonia-label-hora,
     #celebration-card #celebration-label-fecha,
     #celebration-card #celebration-label-hora {
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     #ceremonia-card #ceremonia-decoration,
@@ -720,14 +699,15 @@ img {
 
     #ceremonia-card #ceremonia-button,
     #celebration-card #celebration-button {
-        width: 50%;
+        margin-top: 4rem;
+        width: 100%;
         height: 3.2rem;
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     #vestuario-card #vestuario-palette-box .vestuario-color {
-        min-width: 10rem;
-        min-height: 2rem;
+        width: 7rem;
+        min-height: 1.5rem;
     }
 }
 
@@ -747,7 +727,7 @@ img {
     }
 
     #nombres-esposos-card #nombres-esposos-label-2 {
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     #timer-card .tiempo {
