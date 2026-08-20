@@ -177,67 +177,6 @@ a {
 
 
 
-
-/* ---------- VERSICULO CARD ---------- */
-/* 
-#versiculo-card {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 20rem;
-    font-family: 'fuente7';
-    text-align: center;
-    align-content: center;
-    font-size: 1.2em;
-    color: var(--olivogpt);
-    margin: 0;
-    background-color: whitesmoke;
-    overflow: hidden;
-    z-index: 1;
-}
-
-#versiculo-card #versiculo-label-1 {
-    padding: 0 10rem;
-}
-
-#versiculo-card #flores-decoration-corner-1,
-#versiculo-card #flores-decoration-corner-3 {
-    position: absolute;
-    z-index: 0;
-    max-width: 13rem;
-    margin: 0;
-    pointer-events: none;
-}
-
-#versiculo-card #flores-decoration-corner-1 {
-    top: 0;
-    left: 0;
-}
-
-#versiculo-card #flores-decoration-corner-3 {
-    bottom: 0;
-    right: 0;
-}
-
-#flores-decoration-top {
-    display: block;
-    width: 50%;
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
 /* ---------- NOMBRES ESPOSOS CARD ------------ */
 
 #nombres-esposos-card {
