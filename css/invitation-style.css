@@ -1,41 +1,41 @@
 /* FUENTES */
-    @font-face {
-        font-family: 'fuente1';
-        src: url(../fonts/playfairdisplay/static/PlayfairDisplay-Regular.ttf);
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+    font-family: 'fuente1';
+    src: url(../fonts/playfairdisplay/static/PlayfairDisplay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face {
-        font-family: 'fuente1-cursiva';
-        src: url(../fonts/playfairdisplay/static/PlayfairDisplay-Italic.ttf);
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+    font-family: 'fuente1-cursiva';
+    src: url(../fonts/playfairdisplay/static/PlayfairDisplay-Italic.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face {
-        font-family: 'fuente3';
-        src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+    font-family: 'fuente3';
+    src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face {
-        font-family: 'fuente4';
-        src: url(../fonts/Kapakana/static/Kapakana-Regular.ttf);
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+    font-family: 'fuente4';
+    src: url(../fonts/Kapakana/static/Kapakana-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
-    @font-face {
-        font-family: 'fuente5';
-        src: url(../fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf);
-    }
+@font-face {
+    font-family: 'fuente5';
+    src: url(../fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf);
+}
 
-    @font-face {
-        font-family: 'fuente7';
-        src: url(../fonts/Parisienne/Parisienne-Regular.ttf);
-    }
+@font-face {
+    font-family: 'fuente7';
+    src: url(../fonts/Parisienne/Parisienne-Regular.ttf);
+}
 
     
 /********* COLORES *********/
@@ -55,7 +55,7 @@
 body {
     margin: 0;
     background-color: white;
-    background-image: url(/img/textura-papel.jpg);
+    background-image: url(../img/textura-papel.jpg);
 }
 
 main {
