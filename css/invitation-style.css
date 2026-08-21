@@ -638,7 +638,7 @@ img {
     #header-card #header-label-1,
     #header-card #header-label-2 {
         font-size: 1.5em;
-        padding: 0 1rem;
+        padding: 0 .3rem;
     }
 
     #nombres-esposos-card p {
