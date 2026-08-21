@@ -639,10 +639,18 @@ img {
         max-width: 90%;
     }
 
+    #header-card #corazon-bordado-img {
+        width: 17rem;
+    }
+
     #header-card #header-label-1,
     #header-card #header-label-2 {
         font-size: 1.5em;
         padding: 0;
+    }
+
+    #nombres-esposos-card {
+        height: 100vh;
     }
 
     #nombres-esposos-card p {
@@ -650,7 +658,11 @@ img {
     }
 
     #nombres-esposos-card #nombres-esposos-label-2 {
-        font-size: 3em;
+        font-size: 2.35em;
+    }
+
+    #timer-card {
+        padding: 0;
     }
 
     #timer-card .tiempo {
@@ -662,7 +674,7 @@ img {
     }
 
     #timer-card .descripcion {
-        font-size: 1.25em;
+        font-size: 1.4em;
     }
 
     #timer-card .timer-linea-l,
@@ -670,19 +682,41 @@ img {
         width: 40%;
     }
 
+    #ceremonia-card .icon,
+    #celebration-card .icon,
+    #vestuario-card .icon {
+        height: 3rem;
+    }
+
+    #ceremonia-card #ceremonia-title,
+    #celebration-card #celebration-title,
+    #vestuario-card #celebration-title,
+    #ceremonia-card #ceremonia-button,
+    #celebration-card #celebration-button {
+        font-size: 1.5rem;
+    }
+
+    #ceremonia-card #ceremonia-label-1,
+    #celebration-card #celebration-label-1,
+    #vestuario-card #vestuario-label-1,
+    #vestuario-card #vestuario-label-2 {
+        font-size: 1em;
+    }
+
     #ceremonia-card #ceremonia-label-2,
     #ceremonia-card #ceremonia-label-3,
+    #ceremonia-card #ceremonia-label-4,
     #celebration-card #celebration-label-2,
     #celebration-card #celebration-label-3,
-    #vestuario-card #vestuario-label-3,
-    #vestuario-card #vestuario-label-5 {
-        font-size: 1.2em;
+    #celebration-card #celebration-label-4,
+    #vestuario-card #vestuario-label-3 {
+        font-size: 1.25em;
     }
 
     #ceremonia-card #ceremonia-label-fecha,
     #ceremonia-card #ceremonia-label-hora,
     #celebration-card #celebration-label-fecha,
     #celebration-card #celebration-label-hora {
-        font-size: 1.6em;
+        font-size: 2.3em;
     }
 }
