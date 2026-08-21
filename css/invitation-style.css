@@ -635,10 +635,14 @@ img {
 
 
 @media (max-width: 500px) {
+    main {
+        max-width: 90%;
+    }
+
     #header-card #header-label-1,
     #header-card #header-label-2 {
         font-size: 1.5em;
-        padding: 0 .3rem;
+        padding: 0;
     }
 
     #nombres-esposos-card p {
