@@ -325,11 +325,13 @@ a {
 #vestuario-card {
     width: 100%;
     height: 83rem;
-    padding: 0 5rem;
+    padding: 5rem;
     margin: 0 auto;
     align-items: center;
     align-content: center;
     text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #ceremonia-card {
@@ -636,7 +638,7 @@ img {
 
 @media (max-width: 500px) {
     main {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     #header-card #corazon-bordado-img {
@@ -707,8 +709,7 @@ img {
 
     #ceremonia-card #ceremonia-label-1,
     #celebration-card #celebration-label-1,
-    #vestuario-card #vestuario-label-1,
-    #vestuario-card #vestuario-label-2 {
+    #vestuario-card #vestuario-label-1 {
         font-size: 1em;
         margin: 0;
     }
@@ -719,6 +720,7 @@ img {
     #celebration-card #celebration-label-2,
     #celebration-card #celebration-label-3,
     #celebration-card #celebration-label-4,
+    #vestuario-card #vestuario-label-2,
     #vestuario-card #vestuario-label-3 {
         font-size: 1.2em;
         margin: 1rem 0;
