@@ -691,7 +691,7 @@ img {
     #ceremonia-card,
     #celebration-card,
     #vestuario-card {
-        height: 100vh;
+        min-height: 100vh;
         padding: 3rem;
     }
 
