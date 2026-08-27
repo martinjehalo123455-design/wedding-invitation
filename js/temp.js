@@ -7,7 +7,7 @@ const intervalo = setInterval(() => {
 
   if (diferencia <= 0) {
     clearInterval(intervalo);
-    const timer = document.getElementById("timer");
+    const timer = document.getElementById("timer-card");
     timer.textContent = "";
     timer.innerHTML = "<h3>!ES HOY, ES HOY!</h3>";
     return;
