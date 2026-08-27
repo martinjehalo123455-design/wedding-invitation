@@ -44,6 +44,9 @@
     --terracotagpt: #cb997e; /* Terracota */
     --terracota-oscuro: #5c280c;
     --darkclay: #7A3B2E;
+    --spicedbrucks: #8c3e2f;
+    --burnterracota: #a04a32;
+    --forestolive: #4f5d2f;
     --olive:#808000;
     --olivogpt: #6b705c; /* Títulos */
     --beige1: #E8D8C3;
@@ -214,7 +217,7 @@ a {
 #nombres-esposos-card .nombres-esposos-divider {
     width: 10rem;
     height: .15rem;
-    background-color: var(--terracotagpt);
+    background-color: var(--darkclay);
     margin: 2rem;
     margin-left: auto;
     margin-right: auto;
