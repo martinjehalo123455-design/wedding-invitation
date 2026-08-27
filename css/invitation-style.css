@@ -340,12 +340,12 @@ a {
 
 #ceremonia-card {
     background-color: var(--darkclay);
-    color: var(--beigegpt);
+    color: white;
 }
 
 #celebration-card {
     background-color: var(--olivogpt);
-    color: var(--beigegpt);
+    color: white;
 }
 
 #vestuario-card {
