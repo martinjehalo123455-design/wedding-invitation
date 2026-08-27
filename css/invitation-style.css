@@ -707,14 +707,14 @@ img {
     #vestuario-card #vestuario-title,
     #ceremonia-card #ceremonia-button,
     #celebration-card #celebration-button {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin: 1rem 0;
     }
 
     #ceremonia-card #ceremonia-label-1,
     #celebration-card #celebration-label-1,
     #vestuario-card #vestuario-label-1 {
-        font-size: 1em;
+        font-size: 1.5em;
         margin: 0;
     }
 
@@ -726,7 +726,7 @@ img {
     #celebration-card #celebration-label-4,
     #vestuario-card #vestuario-label-2,
     #vestuario-card #vestuario-label-3 {
-        font-size: 1.2em;
+        font-size: 1.5em;
         margin: 1rem 0;
     }
 
