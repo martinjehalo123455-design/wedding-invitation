@@ -301,7 +301,7 @@ a {
     font-family: 'fuente4';
     font-size: 2em;
     margin: 0;
-    color: var(--beigegpt);
+    color: white;
 }
 
 #timer-card .punto {
