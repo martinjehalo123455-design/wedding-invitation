@@ -573,7 +573,8 @@ img {
     #ceremonia-card,
     #celebration-card,
     #vestuario-card {
-        height: 60rem;
+        min-height: 100vh;
+        max-height: 110vh;
     }
 
     #ceremonia-card .icon,
@@ -646,7 +647,8 @@ img {
     }
 
     #header-card #corazon-bordado-img {
-        width: 17rem;
+        width: 20rem;
+        top: 1rem
     }
 
     #header-card #header-label-1,
@@ -676,7 +678,7 @@ img {
     }
 
     #timer-card .descripcion {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     #timer-card .tiempo,
@@ -694,7 +696,8 @@ img {
     #ceremonia-card,
     #celebration-card,
     #vestuario-card {
-        min-height: 100vh;
+        height: 100vh;
+        max-height: 10rem;
         padding: 3rem;
     }
 
