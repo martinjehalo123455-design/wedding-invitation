@@ -283,8 +283,7 @@ a {
     margin: 1rem 0;
 }
 
-#padres-card #padres-divider-1,
-#padres-card #padres-divider-2 {
+#padres-card #padres-divider-1 {
     width: 70%;
     height: .15rem;
     background-color: var(--darkclay);
@@ -655,8 +654,7 @@ img {
         margin: 1rem 0;
     }
 
-    #padres-card #padres-divider-1,
-    #padres-card #padres-divider-2 {
+    #padres-card #padres-divider-1 {
         width: 25rem;
         height: .15rem;
         margin: 2rem auto;
@@ -838,8 +836,7 @@ img {
         margin: .5rem auto;
     }
 
-    #padres-card #padres-divider-1,
-    #padres-card #padres-divider-2 {
+    #padres-card #padres-divider-1 {
         width: 15em;
         height: .12rem;
         margin: 1rem auto;
