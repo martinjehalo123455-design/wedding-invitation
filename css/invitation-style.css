@@ -283,7 +283,7 @@ a {
     margin: 1rem 0;
 }
 
-#padres-card #padres-divider-1 {
+#divider-1 {
     width: 70%;
     height: .15rem;
     background-color: var(--darkclay);
@@ -614,7 +614,8 @@ img {
 
     #padres-card {
         height: fit-content;
-        margin: 7rem 0;
+        margin: 0;
+        margin-bottom: 9rem;
     }
 
     #padres-card #nombres_padres_novia,
@@ -654,10 +655,10 @@ img {
         margin: 1rem 0;
     }
 
-    #padres-card #padres-divider-1 {
+    #divider-1 {
         width: 25rem;
         height: .15rem;
-        margin: 2rem auto;
+        margin: 8rem auto;
     }
     
 
@@ -775,7 +776,7 @@ img {
     }
 
     #nombres-esposos-card {
-        height: 30rem;
+        height: 25rem;
         margin: 0;
         margin-top: 4rem;
     }
@@ -795,7 +796,6 @@ img {
     #padres-card {
         height: 30rem;
         margin: 0;
-        margin-bottom: 2rem;
     }
 
     #padres-card #nombres_padres_novia,
@@ -836,10 +836,10 @@ img {
         margin: .5rem auto;
     }
 
-    #padres-card #padres-divider-1 {
+    #divider-1 {
         width: 15em;
         height: .12rem;
-        margin: 1rem auto;
+        margin: 5rem auto;
     }
 
 
