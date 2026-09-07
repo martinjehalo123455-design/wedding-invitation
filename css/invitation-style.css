@@ -503,7 +503,8 @@ a {
 
 #ceremonia-card #ceremonia-label-1,
 #vestuario-card #vestuario-label-2,
-#vestuario-card #vestuario-label-4 {
+#vestuario-card #vestuario-label-4,
+#galeria-card #galeria-label-1 {
     font-size: 2em;
     font-family: 'fuente3';
     margin: 2rem auto;
@@ -515,6 +516,10 @@ a {
     margin: auto;
     margin-top: 0;
     margin-bottom: 2rem;
+}
+
+#galeria-card #galeria-label-1 {
+    color: var(--olivogpt);
 }
 
 #ceremonia-card #ceremonia-label-2,
@@ -644,11 +649,16 @@ a {
     color: var(--forestolive);
 }
 
+#galeria-box-2 {
+    position: relative;
+    height: fit-content;
+}
+
 .gradient {
-    width: 10%;
-    height: 100%;
     position: absolute;
     top: 0;
+    height: 100%;
+    width: 10%;
 }
 
 #galeria-gradient-1 {
