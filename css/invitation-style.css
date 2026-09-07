@@ -188,6 +188,10 @@ a {
     left: 50%;
 }
 
+#corazon-bordado-img.reveal-text {
+    transition-duration: 2s;
+}
+
 #header-card-hero #sobre-opened-img {
     z-index: 1;
     width: 80%;
