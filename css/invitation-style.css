@@ -131,8 +131,7 @@ a {
     z-index: 1;
     min-height: 100vh;
     margin: 0;
-    padding: 3rem;
-    background: url("../img/propuesta-img.jpg");
+    background: url("../img/paisaje-fondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,7 +141,14 @@ a {
     overflow: hidden;
 }
 
-#header-card #corazon-bordado-img {
+#header-card-hero {
+    background-color: hsla(50, 10%, 20%, .4);
+    width: inherit;
+    min-height: inherit;
+    padding: 2rem;
+}
+
+#header-card-hero #corazon-bordado-img {
     position: absolute;
     margin: 0;
     z-index: 2;
@@ -154,9 +160,9 @@ a {
     left: 50%;
 }
 
-#header-card #sobre-opened-img {
+#header-card-hero #sobre-opened-img {
     z-index: 1;
-    width: 100%;
+    width: 80%;
     max-width: 30rem;
     margin: 0;
     margin-bottom: 1rem;
@@ -171,6 +177,29 @@ a {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+#foto-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../fotos/picture_portada.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-gradient {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        hsla(50, 50%, 90%, 1),
+        transparent,
+        transparent,
+        transparent,
+        hsla(50, 50%, 90%, 1)
+    );
+}
+
+
 
 
 
@@ -402,7 +431,7 @@ a {
 }
 
 #vestuario-card {
-    max-height: 120vh;
+    max-height: 100vh;
 }
 
 #ceremonia-card {
