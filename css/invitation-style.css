@@ -181,7 +181,7 @@ a {
 #foto-1 {
     width: 100%;
     height: 100vh;
-    background-image: url(../fotos/picture_portada.jpeg);
+    background-image: url(../fotos/ring_foto.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -419,7 +419,7 @@ a {
 #celebration-card,
 #vestuario-card {
     width: 100%;
-    height: 83rem;
+    min-height: 70rem;
     padding: 5rem;
     margin: 0 auto;
     align-items: center;
@@ -613,13 +613,13 @@ img {
     /* HEADER CARD */
     #header-card #corazon-bordado-img {
         width: 100%;
-        max-width: 25rem;
+        max-width: 30rem;
     }
 
     #header-card #sobre-opened-img {
         height: auto;
         width: 100%;
-        max-width: 25rem;
+        max-width: 30rem;
     }
 
     #header-card #header-label-1,
@@ -932,13 +932,12 @@ img {
     }
 
     #ceremonia-card #ceremonia-title,
-    #celebration-card #celebration-title,
-    #vestuario-card #vestuario-title,
     #ceremonia-card #ceremonia-button,
-    #celebration-card #celebration-button {
+    #vestuario-card #vestuario-title {
         font-size: 1.5rem;
         margin: 1rem 0;
     }
+
 
     #ceremonia-card #ceremonia-label-1,
     #celebration-card #celebration-label-1,
