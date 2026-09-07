@@ -1,7 +1,7 @@
 // Animación de aparición: los textos suben ligeramente y se desvanecen
 // hacia adentro conforme entran en el viewport al hacer scroll.
 document.addEventListener('DOMContentLoaded', () => {
-    const elementos = document.querySelectorAll('#header-card-index p, #header-card-index img, main p, main h3, main a#ceremonia-button');
+    const elementos = document.querySelectorAll('#header-card-index p, #header-card-index img, main p, main h3, main a#ceremonia-button, .icon');
 
     if (!elementos.length) return;
 
