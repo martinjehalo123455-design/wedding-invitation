@@ -864,7 +864,8 @@ img {
     /* CEREMONIA / CELEBRACION / VESTUARIO CARDS */
     #ceremonia-card,
     #celebration-card,
-    #vestuario-card {
+    #vestuario-card,
+    #galeria-card {
         min-height: 100vh;
         max-height: 110vh;
     }
@@ -873,13 +874,21 @@ img {
         max-height: 80vh;
     }
 
+    #regalos-card {
+        min-height: 80vh;
+    }
+
     #ceremonia-card .icon,
     #celebration-card .icon,
-    #vestuario-card .icon {
+    #vestuario-card .icon,
+    #galeria-card .icon,
+    #regalos-card .icon {
         height: 4rem;
     }
 
-    #ceremonia-card #ceremonia-title {
+    #ceremonia-card #ceremonia-title,
+    #regalos-card #regalos-title,
+    #galeria-card #galeria-title {
         width: 100%;
         max-width: 30rem;
         margin: 3rem auto;
@@ -894,7 +903,9 @@ img {
     }
 
     #ceremonia-card #ceremonia-label-1,
-    #vestuario-card #vestuario-label-1 {
+    #vestuario-card #vestuario-label-1,
+    #regalos-card #regalos-label-1,
+    #regalos-card #regalos-label-2 {
         font-size: 1.6em;
     }
 
@@ -919,10 +930,11 @@ img {
         margin: 1rem 3rem;
     }
 
-    #ceremonia-card #ceremonia-button {
+    #ceremonia-card #ceremonia-button,
+    #regalos-card #regalos-button {
         width: 100%;
         height: 3.2rem;
-        font-size: 1.8em;
+        font-size: 3em;
     }
 
     .imagen  {
@@ -1039,7 +1051,8 @@ img {
     }
 
     #ceremonia-card,
-    #vestuario-card {
+    #vestuario-card,
+    #regalos-card {
         height: 100vh;
         max-height: 10rem;
         padding: 3rem;
@@ -1049,22 +1062,34 @@ img {
         max-height: 80vh;
     }
 
+    #regalos-card {
+        height: auto;
+        min-height: 100vh;
+        max-height: none;
+    }
+
     #ceremonia-card .icon,
-    #vestuario-card .icon {
+    #vestuario-card .icon,
+    #galeria-card .icon,
+    #regalos-card .icon {
         height: 3rem;
         margin: 1rem auto;
     }
 
     #ceremonia-card #ceremonia-title,
     #ceremonia-card #ceremonia-button,
-    #vestuario-card #vestuario-title {
+    #vestuario-card #vestuario-title,
+    #galeria-card #galeria-title,
+    #regalos-card #regalos-title,
+    #regalos-card #regalos-button {
         font-size: 1.5rem;
         margin: 1rem 0;
     }
 
 
     #ceremonia-card #ceremonia-label-1,
-    #vestuario-card #vestuario-label-1 {
+    #vestuario-card #vestuario-label-1,
+    #regalos-card #regalos-label-1 {
         font-size: 1.5em;
         margin: 0;
     }
