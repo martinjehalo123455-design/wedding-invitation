@@ -416,7 +416,6 @@ a {
 /* -------------- CEREMONIA | CELEBRATION | VESTUARIO CARDS -------------- */
 
 #ceremonia-card,
-#celebration-card,
 #vestuario-card {
     width: 100%;
     min-height: 70rem;
@@ -432,6 +431,8 @@ a {
 
 #vestuario-card {
     max-height: 100vh;
+    background-color: var(--beigegpt);
+    color: var(--olivogpt);
 }
 
 #ceremonia-card {
@@ -439,37 +440,32 @@ a {
     color: white;
 }
 
-#celebration-card {
-    background-color: var(--olivogpt);
-    color: white;
-}
-
-#vestuario-card {
-    background-color: var(--beigegpt);
-    color: var(--olivogpt);
-}
 
 #ceremonia-card .icon,
-#celebration-card .icon,
 #vestuario-card .icon {
     max-width: 5rem;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #ceremonia-card #ceremonia-title,
-#celebration-card #celebration-title,
 #vestuario-card #vestuario-title {
     font-family: 'fuente1';
     font-size: 3em;
-    padding: 1rem 0;
+}
+
+#ceremonia-card #ceremonia-title {
     margin: 8rem auto;
 }
 
+#vestuario-card #vestuario-title {
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 0rem;
+}
+
 #ceremonia-card #ceremonia-label-1,
-#celebration-card #celebration-label-1,
-#vestuario-card #vestuario-label-1,
 #vestuario-card #vestuario-label-2,
 #vestuario-card #vestuario-label-4 {
     font-size: 2em;
@@ -477,12 +473,17 @@ a {
     margin: 2rem auto;
 }
 
+#vestuario-card #vestuario-label-1 {
+    font-size: 2em;
+    font-family: 'fuente3';
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
 #ceremonia-card #ceremonia-label-2,
 #ceremonia-card #ceremonia-label-3,
 #ceremonia-card #ceremonia-label-4,
-#celebration-card #celebration-label-2,
-#celebration-card #celebration-label-3,
-#celebration-card #celebration-label-4,
 #vestuario-card #vestuario-label-3,
 #vestuario-card #vestuario-label-5,
 #vestuario-card #vestuario-label-6,
@@ -499,8 +500,7 @@ a {
     color: var(--olive);
 }
 
-#ceremonia-card #ceremonia-date-box,
-#celebration-card #celebration-date-box {
+#ceremonia-card #ceremonia-date-box {
     margin: 2rem auto;
     display: flex;
     justify-content: center;
@@ -508,17 +508,14 @@ a {
 }
 
 #ceremonia-card #ceremonia-label-fecha,
-#ceremonia-card #ceremonia-label-hora,
-#celebration-card #celebration-label-fecha,
-#celebration-card #celebration-label-hora {
+#ceremonia-card #ceremonia-label-hora {
     font-family: 'fuente1';
     font-size: 3.5em;
     display: inline-block;
     margin: 0;
 }
 
-#ceremonia-card #ceremonia-decoration,
-#celebration-card #celebration-decoration {
+#ceremonia-card #ceremonia-decoration {
     display: inline-block;
     margin: 4rem;
     margin-bottom: auto;
@@ -545,8 +542,7 @@ a {
     margin-right: auto;
 }
 
-#ceremonia-card #ceremonia-button,
-#celebration-card #celebration-button {
+#ceremonia-card #ceremonia-button {
     width: 50%;
     height: 4rem;
     background-color: transparent;
@@ -558,7 +554,6 @@ a {
     border-radius: .3rem;
     display: block;
     margin: auto;
-    margin-top: 10rem;
 }
 
 
@@ -743,17 +738,21 @@ img {
         height: 4rem;
     }
 
-    #ceremonia-card #ceremonia-title,
-    #celebration-card #celebration-title,
-    #vestuario-card #vestuario-title {
+    #ceremonia-card #ceremonia-title {
         width: 100%;
         max-width: 30rem;
-        font-size: 1.8em;
         margin: 3rem auto;
     }
 
+    #vestuario-card #vestuario-title {
+        width: 100%;
+        max-width: 30rem;
+        margin: auto;
+        margin-bottom: 0;
+        margin-top: 3rem;
+    }
+
     #ceremonia-card #ceremonia-label-1,
-    #celebration-card #celebration-label-1,
     #vestuario-card #vestuario-label-1 {
         font-size: 1.6em;
     }
@@ -761,9 +760,6 @@ img {
     #ceremonia-card #ceremonia-label-2,
     #ceremonia-card #ceremonia-label-3,
     #ceremonia-card #ceremonia-label-4,
-    #celebration-card #celebration-label-2,
-    #celebration-card #celebration-label-3,
-    #celebration-card #celebration-label-4,
     #vestuario-card #vestuario-label-2,
     #vestuario-card #vestuario-label-3,
     #vestuario-card #vestuario-label-4,
@@ -774,20 +770,15 @@ img {
     }
 
     #ceremonia-card #ceremonia-label-fecha,
-    #ceremonia-card #ceremonia-label-hora,
-    #celebration-card #celebration-label-fecha,
-    #celebration-card #celebration-label-hora {
+    #ceremonia-card #ceremonia-label-hora {
         font-size: 3em;
     }
 
-    #ceremonia-card #ceremonia-decoration,
-    #celebration-card #celebration-decoration {
+    #ceremonia-card #ceremonia-decoration {
         margin: 1rem 3rem;
     }
 
-    #ceremonia-card #ceremonia-button,
-    #celebration-card #celebration-button {
-        margin-top: 4rem;
+    #ceremonia-card #ceremonia-button {
         width: 100%;
         height: 3.2rem;
         font-size: 1.8em;
@@ -827,10 +818,6 @@ img {
     #nombres-esposos-card #nombres-esposos-label-2 {
         font-size: 2.35em;
     }
-
-
-
-
 
     #padres-card {
         height: 30rem;
@@ -882,12 +869,6 @@ img {
     }
 
 
-
-
-
-
-
-
     #timer-card {
         padding: 0;
     }
@@ -913,7 +894,6 @@ img {
     }
 
     #ceremonia-card,
-    #celebration-card,
     #vestuario-card {
         height: 100vh;
         max-height: 10rem;
@@ -925,7 +905,6 @@ img {
     }
 
     #ceremonia-card .icon,
-    #celebration-card .icon,
     #vestuario-card .icon {
         height: 3rem;
         margin: 1rem auto;
@@ -940,7 +919,6 @@ img {
 
 
     #ceremonia-card #ceremonia-label-1,
-    #celebration-card #celebration-label-1,
     #vestuario-card #vestuario-label-1 {
         font-size: 1.5em;
         margin: 0;
@@ -949,9 +927,6 @@ img {
     #ceremonia-card #ceremonia-label-2,
     #ceremonia-card #ceremonia-label-3,
     #ceremonia-card #ceremonia-label-4,
-    #celebration-card #celebration-label-2,
-    #celebration-card #celebration-label-3,
-    #celebration-card #celebration-label-4,
     #vestuario-card #vestuario-label-2,
     #vestuario-card #vestuario-label-3,
     #vestuario-card #vestuario-label-4,
@@ -963,19 +938,15 @@ img {
     }
 
     #ceremonia-card #ceremonia-label-fecha,
-    #ceremonia-card #ceremonia-label-hora,
-    #celebration-card #celebration-label-fecha,
-    #celebration-card #celebration-label-hora {
+    #ceremonia-card #ceremonia-label-hora {
         font-size: 2.5em;
     }
 
-    #ceremonia-card #ceremonia-date-box,
-    #celebration-card #celebration-date-box {
+    #ceremonia-card #ceremonia-date-box {
         margin: 2.5rem 0;
     }
 
-    #ceremonia-card #ceremonia-decoration,
-    #celebration-card #celebration-decoration {
+    #ceremonia-card #ceremonia-decoration {
         margin: 0 1.3rem;
     }
 
