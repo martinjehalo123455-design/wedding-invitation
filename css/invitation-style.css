@@ -100,8 +100,7 @@ a {
 #header-card-index #sobre-closed-img {
     margin: 0;
     display: inline-block;
-    width: auto;
-    max-height: 50vmin;
+    width: 35rem;
 }
 
 
@@ -177,21 +176,15 @@ a {
 }
 
 #header-card-hero #corazon-bordado-img {
-    animation: aparecer .3s ease-in forwards; /* 'forwards' mantiene el estado final */
     position: absolute;
     margin: 0;
     z-index: 2;
-    width: 100%;
+    width: 80%;
     max-width: 30rem;
     pointer-events: none;
     transform: translateX(-50%);
     top: 3rem;
     left: 50%;
-}
-
-@keyframes aparecer {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 #header-card-hero #sobre-opened-img {
@@ -900,6 +893,24 @@ img {
     main {
         width: 95%;
     }
+
+    #header-card-index #sobre-closed-img {
+        margin: 0;
+        display: inline-block;
+        width: 35rem;
+    }
+
+
+    #header-card-index #header-card-index-label-2 {
+        font-size: 3em;
+        margin: 2rem auto;
+    }
+
+    #header-card-index #header-card-index-label-1,
+    #header-card-index #header-card-index-label-3 {
+        font-size: 1em;
+    }
+
 
     #header-card #corazon-bordado-img {
         width: 20rem;
