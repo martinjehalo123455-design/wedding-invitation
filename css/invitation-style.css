@@ -484,11 +484,18 @@ a {
 #ceremonia-card #ceremonia-label-2,
 #ceremonia-card #ceremonia-label-3,
 #ceremonia-card #ceremonia-label-4,
-#vestuario-card #vestuario-label-3,
 #vestuario-card #vestuario-label-5,
 #vestuario-card #vestuario-label-6,
 #vestuario-card #vestuario-label-7 {
     font-size: 2.4em;
+    font-family: 'fuente7';
+    margin: 2rem auto;
+}
+
+#vestuario-card #vestuario-label-2,
+#vestuario-card #vestuario-label-3,
+#vestuario-card #vestuario-label-4 {
+    font-size: 3em;
     font-family: 'fuente7';
     margin: 2rem auto;
 }
@@ -766,7 +773,7 @@ img {
     #vestuario-card #vestuario-label-5,
     #vestuario-card #vestuario-label-6,
     #vestuario-card #vestuario-label-7 {
-        font-size: 1.8em;
+        font-size: 2.4em;
     }
 
     #ceremonia-card #ceremonia-label-fecha,
