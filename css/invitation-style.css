@@ -4,6 +4,7 @@
     src: url(../fonts/playfairdisplay/static/PlayfairDisplay-Regular.ttf);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
     src: url(../fonts/playfairdisplay/static/PlayfairDisplay-Italic.ttf);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +20,7 @@
     src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -25,16 +28,19 @@
     src: url(../fonts/Kapakana/static/Kapakana-Regular.ttf);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'fuente5';
     src: url(../fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'fuente7';
     src: url(../fonts/Parisienne/Parisienne-Regular.ttf);
+    font-display: swap;
 }
 
     
@@ -617,13 +623,8 @@ a {
     );
 }
 
-#foto-2 {
-    background-image: url(../fotos/save-the-date_foto.jpeg);
-}
-
-#foto-1 {
-    background-image: url(../fotos/ring_foto.jpeg);
-}
+/* background-image de #foto-1 y #foto-2 se asigna vía JS (ver animations.js)
+   cuando la sección entra al viewport, para diferir su carga */
 
 #galeria-card .icon {
     max-width: 5rem;

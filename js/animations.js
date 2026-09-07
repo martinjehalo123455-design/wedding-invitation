@@ -31,3 +31,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     elementos.forEach((el) => observador.observe(el));
 });
+
+// Carga diferida de los fondos de las secciones .foto (foto-1, foto-2):
+// el background-image se asigna solo cuando la sección está a punto de
+// entrar en el viewport, en vez de cargarse de inmediato con la página.
+document.addEventListener('DOMContentLoaded', () => {
+    const fondosLazy = document.querySelectorAll('.foto[data-bg]');
+    if (!fondosLazy.length) return;
+
+    const observadorFondos = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+            if (entrada.isIntersecting) {
+                const el = entrada.target;
+                el.style.backgroundImage = `url('${el.dataset.bg}')`;
+                observadorFondos.unobserve(el);
+            }
+        });
+    }, { rootMargin: '200px 0px' });
+
+    fondosLazy.forEach((el) => observadorFondos.observe(el));
+});
