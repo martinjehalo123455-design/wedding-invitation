@@ -124,15 +124,38 @@ a {
 
 
 
-/* --------------- HEADER CARD -------------- */
+/* --------------- ANIMACIÓN DE TEXTOS (aparecer desde abajo) -------------- */
+.reveal-text {
+    opacity: 0;
+    transform: translateY(2.5rem);
+    transition: opacity .8s cubic-bezier(.25, .1, .25, 1),
+                transform .8s cubic-bezier(.25, .1, .25, 1);
+    will-change: opacity, transform;
+}
 
+.reveal-text.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-text {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+
+/* --------------- HEADER CARD -------------- */
 #header-card {
     position: relative;
     z-index: 1;
     min-height: 100vh;
     margin: 0;
-    padding: 3rem;
-    background: url("../img/propuesta-img.jpg");
+    background: url("../img/paisaje-fondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,7 +165,15 @@ a {
     overflow: hidden;
 }
 
-#header-card #corazon-bordado-img {
+#header-card-hero {
+    background-color: hsla(50, 10%, 20%, .4);
+    width: inherit;
+    min-height: inherit;
+    padding: 2rem;
+}
+
+#header-card-hero #corazon-bordado-img {
+    animation: aparecer .3s ease-in forwards; /* 'forwards' mantiene el estado final */
     position: absolute;
     margin: 0;
     z-index: 2;
@@ -154,9 +185,14 @@ a {
     left: 50%;
 }
 
-#header-card #sobre-opened-img {
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#header-card-hero #sobre-opened-img {
     z-index: 1;
-    width: 100%;
+    width: 80%;
     max-width: 30rem;
     margin: 0;
     margin-bottom: 1rem;
@@ -171,6 +207,8 @@ a {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+
 
 
 
@@ -387,22 +425,33 @@ a {
 /* -------------- CEREMONIA | CELEBRATION | VESTUARIO CARDS -------------- */
 
 #ceremonia-card,
-#celebration-card,
-#vestuario-card {
+#vestuario-card,
+#galeria-card,
+#regalos-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0;
     width: 100%;
-    height: 83rem;
+    min-height: 70rem;
     padding: 5rem;
     margin: 0 auto;
     align-items: center;
     align-content: center;
     text-align: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0;
+}
+
+#galeria-card {
+    grid-template-rows: auto auto;
+    gap: 3rem;
+    padding: 0;
+    position: relative;
+    text-align: center;
 }
 
 #vestuario-card {
-    max-height: 120vh;
+    max-height: 100vh;
+    background-color: var(--beigegpt);
+    color: var(--olivogpt);
 }
 
 #ceremonia-card {
@@ -410,37 +459,50 @@ a {
     color: white;
 }
 
-#celebration-card {
+#regalos-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    min-height: fit-content;
+    padding: 5rem;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
     background-color: var(--olivogpt);
     color: white;
 }
 
-#vestuario-card {
-    background-color: var(--beigegpt);
-    color: var(--olivogpt);
-}
 
 #ceremonia-card .icon,
-#celebration-card .icon,
-#vestuario-card .icon {
+#vestuario-card .icon,
+#regalos-card .icon {
     max-width: 5rem;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #ceremonia-card #ceremonia-title,
-#celebration-card #celebration-title,
-#vestuario-card #vestuario-title {
+#vestuario-card #vestuario-title,
+#galeria-card #galeria-title,
+#regalos-card #regalos-title {
     font-family: 'fuente1';
     font-size: 3em;
-    padding: 1rem 0;
+}
+
+#ceremonia-card #ceremonia-title {
     margin: 8rem auto;
 }
 
+#vestuario-card #vestuario-title {
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 0rem;
+}
+
 #ceremonia-card #ceremonia-label-1,
-#celebration-card #celebration-label-1,
-#vestuario-card #vestuario-label-1,
 #vestuario-card #vestuario-label-2,
 #vestuario-card #vestuario-label-4 {
     font-size: 2em;
@@ -448,17 +510,31 @@ a {
     margin: 2rem auto;
 }
 
+#vestuario-card #vestuario-label-1 {
+    font-size: 2em;
+    font-family: 'fuente3';
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
 #ceremonia-card #ceremonia-label-2,
 #ceremonia-card #ceremonia-label-3,
 #ceremonia-card #ceremonia-label-4,
-#celebration-card #celebration-label-2,
-#celebration-card #celebration-label-3,
-#celebration-card #celebration-label-4,
-#vestuario-card #vestuario-label-3,
 #vestuario-card #vestuario-label-5,
 #vestuario-card #vestuario-label-6,
-#vestuario-card #vestuario-label-7 {
+#vestuario-card #vestuario-label-7,
+#regalos-card #regalos-label-1, 
+#regalos-card #regalos-label-2 {
     font-size: 2.4em;
+    font-family: 'fuente7';
+    margin: 2rem auto;
+}
+
+#vestuario-card #vestuario-label-2,
+#vestuario-card #vestuario-label-3,
+#vestuario-card #vestuario-label-4 {
+    font-size: 3em;
     font-family: 'fuente7';
     margin: 2rem auto;
 }
@@ -470,8 +546,7 @@ a {
     color: var(--olive);
 }
 
-#ceremonia-card #ceremonia-date-box,
-#celebration-card #celebration-date-box {
+#ceremonia-card #ceremonia-date-box {
     margin: 2rem auto;
     display: flex;
     justify-content: center;
@@ -479,17 +554,14 @@ a {
 }
 
 #ceremonia-card #ceremonia-label-fecha,
-#ceremonia-card #ceremonia-label-hora,
-#celebration-card #celebration-label-fecha,
-#celebration-card #celebration-label-hora {
+#ceremonia-card #ceremonia-label-hora {
     font-family: 'fuente1';
     font-size: 3.5em;
     display: inline-block;
     margin: 0;
 }
 
-#ceremonia-card #ceremonia-decoration,
-#celebration-card #celebration-decoration {
+#ceremonia-card #ceremonia-decoration {
     display: inline-block;
     margin: 4rem;
     margin-bottom: auto;
@@ -517,7 +589,7 @@ a {
 }
 
 #ceremonia-card #ceremonia-button,
-#celebration-card #celebration-button {
+#regalos-card #regalos-button {
     width: 50%;
     height: 4rem;
     background-color: transparent;
@@ -529,8 +601,9 @@ a {
     border-radius: .3rem;
     display: block;
     margin: auto;
-    margin-top: 10rem;
+    padding: 0;
 }
+
 
 
 
@@ -564,6 +637,98 @@ a {
 
 
 
+
+
+
+
+
+
+/* --------------- GALERIA CARD -------------- */
+
+.foto {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.foto-gradient {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(
+        hsla(50, 50%, 90%, 1),
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        hsla(50, 50%, 90%, 1)
+    );
+}
+
+#foto-2 {
+    background-image: url(../fotos/save-the-date_foto.jpeg);
+}
+
+#foto-1 {
+    background-image: url(../fotos/ring_foto.jpeg);
+}
+
+#galeria-card .icon {
+    max-width: 5rem;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#galeria-title {
+    font-family: 'fuente1';
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--forestolive);
+}
+
+.gradient {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#galeria-gradient-1 {
+    background: linear-gradient(
+        to right,
+        hsla(50, 50%, 90%, 1),
+        transparent
+    );
+}
+
+#galeria-gradient-2 {
+    right: 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        hsla(50, 50%, 90%, 1)
+    );
+}
+
+#galeria-track {
+    display:flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+#galeria-track::-webkit-scrollbar {
+    display: none;
+}
+
+.imagen  {
+    height: 30rem;
+}
+
+
+
 /* ==================================================================
    RESPONSIVE - PHONE / TABLET
    ================================================================== */
@@ -584,13 +749,13 @@ img {
     /* HEADER CARD */
     #header-card #corazon-bordado-img {
         width: 100%;
-        max-width: 25rem;
+        max-width: 30rem;
     }
 
     #header-card #sobre-opened-img {
         height: auto;
         width: 100%;
-        max-width: 25rem;
+        max-width: 30rem;
     }
 
     #header-card #header-label-1,
@@ -699,7 +864,8 @@ img {
     /* CEREMONIA / CELEBRACION / VESTUARIO CARDS */
     #ceremonia-card,
     #celebration-card,
-    #vestuario-card {
+    #vestuario-card,
+    #galeria-card {
         min-height: 100vh;
         max-height: 110vh;
     }
@@ -708,60 +874,71 @@ img {
         max-height: 80vh;
     }
 
+    #regalos-card {
+        min-height: 80vh;
+    }
+
     #ceremonia-card .icon,
     #celebration-card .icon,
-    #vestuario-card .icon {
+    #vestuario-card .icon,
+    #galeria-card .icon,
+    #regalos-card .icon {
         height: 4rem;
     }
 
     #ceremonia-card #ceremonia-title,
-    #celebration-card #celebration-title,
-    #vestuario-card #vestuario-title {
+    #regalos-card #regalos-title,
+    #galeria-card #galeria-title {
         width: 100%;
         max-width: 30rem;
-        font-size: 1.8em;
         margin: 3rem auto;
     }
 
+    #vestuario-card #vestuario-title {
+        width: 100%;
+        max-width: 30rem;
+        margin: auto;
+        margin-bottom: 0;
+        margin-top: 3rem;
+    }
+
     #ceremonia-card #ceremonia-label-1,
-    #celebration-card #celebration-label-1,
-    #vestuario-card #vestuario-label-1 {
+    #vestuario-card #vestuario-label-1,
+    #regalos-card #regalos-label-1,
+    #regalos-card #regalos-label-2 {
         font-size: 1.6em;
     }
 
     #ceremonia-card #ceremonia-label-2,
     #ceremonia-card #ceremonia-label-3,
     #ceremonia-card #ceremonia-label-4,
-    #celebration-card #celebration-label-2,
-    #celebration-card #celebration-label-3,
-    #celebration-card #celebration-label-4,
     #vestuario-card #vestuario-label-2,
     #vestuario-card #vestuario-label-3,
     #vestuario-card #vestuario-label-4,
     #vestuario-card #vestuario-label-5,
     #vestuario-card #vestuario-label-6,
     #vestuario-card #vestuario-label-7 {
-        font-size: 1.8em;
+        font-size: 2.4em;
     }
 
     #ceremonia-card #ceremonia-label-fecha,
-    #ceremonia-card #ceremonia-label-hora,
-    #celebration-card #celebration-label-fecha,
-    #celebration-card #celebration-label-hora {
+    #ceremonia-card #ceremonia-label-hora {
         font-size: 3em;
     }
 
-    #ceremonia-card #ceremonia-decoration,
-    #celebration-card #celebration-decoration {
+    #ceremonia-card #ceremonia-decoration {
         margin: 1rem 3rem;
     }
 
     #ceremonia-card #ceremonia-button,
-    #celebration-card #celebration-button {
-        margin-top: 4rem;
+    #regalos-card #regalos-button {
         width: 100%;
         height: 3.2rem;
-        font-size: 1.8em;
+        font-size: 3em;
+    }
+
+    .imagen  {
+        height: 30rem;
     }
 }
 
@@ -798,10 +975,6 @@ img {
     #nombres-esposos-card #nombres-esposos-label-2 {
         font-size: 2.35em;
     }
-
-
-
-
 
     #padres-card {
         height: 30rem;
@@ -853,12 +1026,6 @@ img {
     }
 
 
-
-
-
-
-
-
     #timer-card {
         padding: 0;
     }
@@ -884,8 +1051,8 @@ img {
     }
 
     #ceremonia-card,
-    #celebration-card,
-    #vestuario-card {
+    #vestuario-card,
+    #regalos-card {
         height: 100vh;
         max-height: 10rem;
         padding: 3rem;
@@ -895,25 +1062,34 @@ img {
         max-height: 80vh;
     }
 
+    #regalos-card {
+        height: auto;
+        min-height: 100vh;
+        max-height: none;
+    }
+
     #ceremonia-card .icon,
-    #celebration-card .icon,
-    #vestuario-card .icon {
+    #vestuario-card .icon,
+    #galeria-card .icon,
+    #regalos-card .icon {
         height: 3rem;
         margin: 1rem auto;
     }
 
     #ceremonia-card #ceremonia-title,
-    #celebration-card #celebration-title,
-    #vestuario-card #vestuario-title,
     #ceremonia-card #ceremonia-button,
-    #celebration-card #celebration-button {
+    #vestuario-card #vestuario-title,
+    #galeria-card #galeria-title,
+    #regalos-card #regalos-title,
+    #regalos-card #regalos-button {
         font-size: 1.5rem;
         margin: 1rem 0;
     }
 
+
     #ceremonia-card #ceremonia-label-1,
-    #celebration-card #celebration-label-1,
-    #vestuario-card #vestuario-label-1 {
+    #vestuario-card #vestuario-label-1,
+    #regalos-card #regalos-label-1 {
         font-size: 1.5em;
         margin: 0;
     }
@@ -921,9 +1097,6 @@ img {
     #ceremonia-card #ceremonia-label-2,
     #ceremonia-card #ceremonia-label-3,
     #ceremonia-card #ceremonia-label-4,
-    #celebration-card #celebration-label-2,
-    #celebration-card #celebration-label-3,
-    #celebration-card #celebration-label-4,
     #vestuario-card #vestuario-label-2,
     #vestuario-card #vestuario-label-3,
     #vestuario-card #vestuario-label-4,
@@ -935,20 +1108,41 @@ img {
     }
 
     #ceremonia-card #ceremonia-label-fecha,
-    #ceremonia-card #ceremonia-label-hora,
-    #celebration-card #celebration-label-fecha,
-    #celebration-card #celebration-label-hora {
+    #ceremonia-card #ceremonia-label-hora {
         font-size: 2.5em;
     }
 
-    #ceremonia-card #ceremonia-date-box,
-    #celebration-card #celebration-date-box {
+    #ceremonia-card #ceremonia-date-box {
         margin: 2.5rem 0;
     }
 
-    #ceremonia-card #ceremonia-decoration,
-    #celebration-card #celebration-decoration {
+    #ceremonia-card #ceremonia-decoration {
         margin: 0 1.3rem;
     }
 
+    #galeria-card {
+        height: 25rem;
+    }
+
+    .imagen  {
+        height: 15rem;
+    }
+
+    #galeria-card {
+        height: 80vh;
+    }
+
+    #galeria-card .icon {
+        max-width: 3rem;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    #galeria-card #galeria-title {
+        font-family: 'fuente1';
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: var(--forestolive);
+    }
 }
