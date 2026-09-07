@@ -1,5 +1,4 @@
-const fechaObjetivo = new Date("2026-12-06T15:59:59").getTime();
-// const fechaObjetivo = new Date("2026-05-07T09:32:00").getTime();
+const fechaObjetivo = new Date("2026-12-06T16:00:00-06:00").getTime();
 
 const intervalo = setInterval(() => {
   const ahora = new Date().getTime();
