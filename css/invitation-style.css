@@ -16,7 +16,7 @@
 }
 
 @font-face {
-    font-family: 'fuente3';
+    font-family: 'fuente2';
     src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
@@ -24,7 +24,7 @@
 }
 
 @font-face {
-    font-family: 'fuente4';
+    font-family: 'fuente3';
     src: url(../fonts/Kapakana/static/Kapakana-Regular.ttf);
     font-weight: normal;
     font-style: normal;
@@ -32,13 +32,13 @@
 }
 
 @font-face {
-    font-family: 'fuente5';
+    font-family: 'fuente4';
     src: url(../fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf);
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'fuente7';
+    font-family: 'fuente5';
     src: url(../fonts/Parisienne/Parisienne-Regular.ttf);
     font-display: swap;
 }
@@ -105,7 +105,7 @@ a {
 
 
 #header-card-index #header-card-index-label-2 {
-    font-family: 'fuente4';
+    font-family: 'fuente3';
     font-size: 5em;
     margin: 0;
     margin-bottom: 1rem;
@@ -212,7 +212,7 @@ a {
 
 #header-card #header-label-1,
 #header-card #header-label-2 {
-    font-family: 'fuente4';
+    font-family: 'fuente3';
     font-size: 2.5em;
     margin: 0;
     margin-top: 1rem;
@@ -253,7 +253,7 @@ a {
 
 #nombres-esposos-card #nombres-esposos-label-2 {
     font-size: 7em;
-    font-family: 'fuente4';
+    font-family: 'fuente3';
     color: var(--terracota-oscuro);
     margin: 0;
 }
@@ -301,7 +301,7 @@ a {
 
 #nombres_padres_novia #padres-novia-label-2,
 #nombres_padres_novio #padres-novio-label-2 {
-    font-family: 'fuente4';
+    font-family: 'fuente3';
     font-size: 4em;
     color: var(--terracota-oscuro);
 }
@@ -395,7 +395,7 @@ a {
 }
 
 #timer-card .tiempo {
-    font-family: 'fuente4';
+    font-family: 'fuente3';
     width: 8rem;
     height: 8rem;
     background-color: var(--olivogpt);
@@ -410,7 +410,7 @@ a {
 }
 
 #timer-card .descripcion {
-    font-family: 'fuente4';
+    font-family: 'fuente3';
     font-size: 2em;
     margin: 0;
     color: white;
@@ -472,11 +472,12 @@ a {
 }
 
 #regalos-card {
+    grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
+    gap: 2rem;
     min-height: fit-content;
     background-color: var(--olivogpt);
     color: white;
 }
-
 
 #ceremonia-card .icon,
 #vestuario-card .icon,
@@ -510,13 +511,13 @@ a {
 #vestuario-card #vestuario-label-4,
 #galeria-card #galeria-label-1 {
     font-size: 2em;
-    font-family: 'fuente3';
+    font-family: 'fuente2';
     margin: 2rem auto;
 }
 
 #vestuario-card #vestuario-label-1 {
     font-size: 2em;
-    font-family: 'fuente3';
+    font-family: 'fuente2';
     margin: auto;
     margin-top: 0;
     margin-bottom: 2rem;
@@ -532,17 +533,26 @@ a {
 #vestuario-card #vestuario-label-5,
 #vestuario-card #vestuario-label-6,
 #regalos-card #regalos-label-1, 
-#regalos-card #regalos-label-2 {
+#regalos-card #regalos-label-2,
+#regalos-card #regalos-label-3,
+#regalos-card #regalos-label-4 {
     font-size: 2.4em;
-    font-family: 'fuente7';
+    font-family: 'fuente5';
     margin: 2rem auto;
+}
+
+#regalos-card #regalos-label-1, 
+#regalos-card #regalos-label-2,
+#regalos-card #regalos-label-3 {
+    font-family: 'fuente3';
+    font-size: 3.5em;
 }
 
 #vestuario-card #vestuario-label-2,
 #vestuario-card #vestuario-label-3,
 #vestuario-card #vestuario-label-4 {
     font-size: 3em;
-    font-family: 'fuente7';
+    font-family: 'fuente5';
     margin: 2rem auto;
 }
 
@@ -594,20 +604,54 @@ a {
     margin-right: auto;
 }
 
-#ceremonia-card #ceremonia-button,
-#regalos-card #regalos-button {
+#ceremonia-card #ceremonia-button {
     width: 50%;
     height: 4rem;
     background-color: transparent;
     color: white;
     border: 0;
-    font-family: 'fuente5';
+    font-family: 'fuente4';
     font-size: 3em;
     text-decoration: none;
     border-radius: .3rem;
     display: block;
     margin: auto;
     padding: 0;
+}
+
+#regalos-card #regalos-box-4 {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+#regalos-card li {
+    font-size: 3em;
+    color: var(--dorado);
+}
+
+#regalos-card .regalos-list-item {
+    font-family: 'fuente3';
+    margin: 0 auto;
+}
+
+#regalos-card p span {
+    color: var(--dorado);
+}
+
+#regalos-card #regalos-button-1,
+#regalos-card #regalos-button-2 {
+    width: 80%;
+    height: 3rem;
+    background-color: var(--olivogpt);
+    border: var(--dorado) solid .1rem;
+    color: var(--dorado);
+    font-family: 'fuente4';
+    font-size: 1.8em;
+}
+
+#regalos-card button:hover {
+    transform: scale(1.1);
 }
 
 
@@ -772,7 +816,7 @@ img {
 
     #nombres_padres_novia #padres-novia-label-2,
     #nombres_padres_novio #padres-novio-label-2 {
-        font-family: 'fuente4';
+        font-family: 'fuente3';
         font-size: 3em;
     }
 
@@ -869,8 +913,11 @@ img {
 
     #ceremonia-card #ceremonia-label-1,
     #vestuario-card #vestuario-label-1,
-    #regalos-card #regalos-label-1,
-    #regalos-card #regalos-label-2 {
+    #regalos-card #regalos-label-1, 
+    #regalos-card #regalos-label-2,
+    #regalos-card #regalos-label-3, 
+    #regalos-card #regalos-label-4,
+    #regalos-card #regalos-label-5 {
         font-size: 1.6em;
     }
 
@@ -1070,7 +1117,11 @@ img {
 
     #ceremonia-card #ceremonia-label-1,
     #vestuario-card #vestuario-label-1,
-    #regalos-card #regalos-label-1 {
+    #regalos-card #regalos-label-1, 
+    #regalos-card #regalos-label-2,
+    #regalos-card #regalos-label-3, 
+    #regalos-card #regalos-label-4,
+    #regalos-card #regalos-label-5 {
         font-size: 1.5em;
         margin: 0;
     }
