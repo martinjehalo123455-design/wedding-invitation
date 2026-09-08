@@ -531,7 +531,6 @@ a {
 #ceremonia-card #ceremonia-label-4,
 #vestuario-card #vestuario-label-5,
 #vestuario-card #vestuario-label-6,
-#vestuario-card #vestuario-label-7,
 #regalos-card #regalos-label-1, 
 #regalos-card #regalos-label-2 {
     font-size: 2.4em;
@@ -549,8 +548,7 @@ a {
 
 #vestuario-card #vestuario-label-3,
 #vestuario-card #vestuario-label-5,
-#vestuario-card #vestuario-label-6,
-#vestuario-card #vestuario-label-7 {
+#vestuario-card #vestuario-label-6 {
     color: var(--olive);
 }
 
@@ -883,8 +881,7 @@ img {
     #vestuario-card #vestuario-label-3,
     #vestuario-card #vestuario-label-4,
     #vestuario-card #vestuario-label-5,
-    #vestuario-card #vestuario-label-6,
-    #vestuario-card #vestuario-label-7 {
+    #vestuario-card #vestuario-label-6 {
         font-size: 2.4em;
     }
 
@@ -1085,8 +1082,7 @@ img {
     #vestuario-card #vestuario-label-3,
     #vestuario-card #vestuario-label-4,
     #vestuario-card #vestuario-label-5,
-    #vestuario-card #vestuario-label-6,
-    #vestuario-card #vestuario-label-7 {
+    #vestuario-card #vestuario-label-6 {
         font-size: 1.5em;
         margin: 1rem 0;
     }
