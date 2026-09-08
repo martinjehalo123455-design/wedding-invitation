@@ -639,8 +639,7 @@ a {
     color: var(--dorado);
 }
 
-#regalos-card #regalos-button-1,
-#regalos-card #regalos-button-2 {
+#regalos-card .regalos-button {
     width: 80%;
     height: 3rem;
     background-color: var(--olivogpt);
@@ -650,7 +649,7 @@ a {
     font-size: 1.8em;
 }
 
-#regalos-card button:hover {
+#regalos-card .regalos-button:hover {
     transform: scale(1.1);
 }
 
