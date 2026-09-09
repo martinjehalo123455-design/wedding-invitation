@@ -49,7 +49,7 @@
     /* COLORES */
     --terracotagpt: #cb997e; /* Terracota */
     --terracota-oscuro: #5c280c;
-    --darkclay: #7A3B2E;
+    --terracora-darkclay: #7A3B2E;
     --forestolive: #4f5d2f;
     --olive:#808000;
     --olivogpt: #6b705c; /* Títulos */
@@ -267,51 +267,68 @@ a {
 #nombres-esposos-card .nombres-esposos-divider {
     width: 10rem;
     height: .15rem;
-    background-color: var(--darkclay);
+    background-color: var(--terracora-darkclay);
     margin: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 
+
+#divider-1 {
+    width: 70%;
+    height: .15rem;
+    background-color: var(--terracora-darkclay);
+    margin: 3rem auto;
+}
+
+
+
 #padres-card {
-    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto auto 1fr auto;
+    grid-template-columns: 90%;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    min-height: 100vh;
     text-align: center;
-    color: var(--terracota-oscuro);
+    background-color: var(--terracota-oscuro);
+    color: var(--beigegpt);
     padding: 0;
-    margin: 12rem 0;
 }
 
-#padres-card #nombres_padres_novia,
-#padres-card #nombres_padres_novio {
+#padres-card #nombres-padres-novia,
+#padres-card #nombres-padres-novio {
     display: inline-block;
-    margin: 0 5rem;
 }
 
-#padres-card #padres_title {
-    font-size: 2em;
+#padres-card #padres-novia-title,
+#padres-card #padres-novio-title {
+    font-size: 3em;
+    font-family: 'fuente4';
+}
+
+#padres-card #padres-novia-label-1,
+#padres-card #padres-novia-label-4 {
     font-family: 'fuente1-cursiva';
-}
-
-#nombres_padres_novia #padres-novia-label-1,
-#nombres_padres_novio #padres-novio-label-1 {
     font-size: 2em;
-    font-family: 'fuente1-cursiva';
 }
 
-#nombres_padres_novia #padres-novia-label-2,
-#nombres_padres_novio #padres-novio-label-2 {
+#padres-card #padres-novia-label-2,
+#padres-card #padres-novia-label-3,
+#padres-card #padres-novia-label-5,
+#padres-card #padres-novio-label-1 {
     font-family: 'fuente3';
+    color: var(--beige1);
     font-size: 4em;
-    color: var(--terracota-oscuro);
 }
-
 
 #padres-card #padres-decoration {
     display: flex;
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     flex-direction: column;
 }
 
@@ -320,7 +337,6 @@ a {
     display: block;
     height: 2.5rem;
     width: .11rem;
-    background-color: var(--terracota-oscuro);
     margin: 0 auto;
 }
 
@@ -329,15 +345,11 @@ a {
     width: .3rem;
     height: .3rem;
     border-radius: 50%;
-    background-color: var(--terracota-oscuro);
     margin: 1rem 0;
 }
 
-#divider-1 {
-    width: 70%;
-    height: .15rem;
-    background-color: var(--darkclay);
-    margin: 3rem auto;
+#padres-decoration .padres-decoration {
+    background-color: var(--terracora-darkclay)
 }
 
 
@@ -435,7 +447,6 @@ a {
 
 
 /* -------------- CEREMONIA | CELEBRATION | VESTUARIO CARDS -------------- */
-
 #ceremonia-card,
 #vestuario-card,
 #galeria-card,
@@ -450,6 +461,10 @@ a {
     align-items: center;
     align-content: center;
     text-align: center;
+}
+
+#padres-card {
+    padding: 3rem 0;
 }
 
 #galeria-card {
@@ -467,7 +482,7 @@ a {
 }
 
 #ceremonia-card {
-    background-color: var(--darkclay);
+    background-color: var(--terracora-darkclay);
     color: white;
 }
 
@@ -802,36 +817,21 @@ img {
         font-size: 4em;
     }
 
-
-
-    #padres-card {
-        height: fit-content;
-        margin: 0;
-        margin-bottom: 9rem;
-    }
-
-    #padres-card #nombres_padres_novia,
-    #padres-card #nombres_padres_novio {
-        display: inline-block;
-        margin: 1.5rem 0;
-    }
-
-    #nombres_padres_novia #padres-novia-label-1,
-    #nombres_padres_novio #padres-novio-label-1 {
+    #padres-card #padres-novia-title,
+    #padres-card #padres-novio-title {
         font-size: 2em;
     }
 
-    #nombres_padres_novia #padres-novia-label-2,
-    #nombres_padres_novio #padres-novio-label-2 {
-        font-family: 'fuente3';
-        font-size: 3em;
+    #padres-card #padres-novia-label-1,
+    #padres-card #padres-novia-label-4 {
+        font-size: 1.5em;
     }
 
-
-    #padres-card #padres-decoration {
-        width: fit-content;
-        margin: 0 auto;
-        display: flex;
+    #padres-card #padres-novia-label-2,
+    #padres-card #padres-novia-label-3,
+    #padres-card #padres-novia-label-5,
+    #padres-card #padres-novio-label-1 {
+        font-size: 3em;
     }
 
     #padres-decoration #padres-linea-l,
@@ -888,11 +888,11 @@ img {
     }
 
     #vestuario-card {
-        max-height: 80vh;
+        max-height: 100vh;
     }
 
     #regalos-card {
-        min-height: 80vh;
+        min-height: 100vh;
     }
 
     #ceremonia-card .icon,
@@ -1030,34 +1030,22 @@ img {
         font-size: 2.35em;
     }
 
-    #padres-card {
-        height: 30rem;
-        margin: 0;
+    #padres-card #padres-novia-title,
+    #padres-card #padres-novio-title {
+        font-size: 1.5em;
     }
 
-    #padres-card #nombres_padres_novia,
-    #padres-card #nombres_padres_novio {
-        width: 100%;
-        display: inline-block;
-        margin: 0;
-    }
-
-    #nombres_padres_novia #padres-novia-label-1,
-    #nombres_padres_novio #padres-novio-label-1 {
+    #padres-card #padres-novia-label-1,
+    #padres-card #padres-novia-label-4 {
         font-size: 1em;
     }
 
-    #nombres_padres_novia #padres-novia-label-2,
-    #nombres_padres_novio #padres-novio-label-2 {
-        font-size: 2.2em;
-    }
 
-
-    #padres-card #padres-decoration {
-        display: flex;
-        width: fit-content;
-        margin: 0 auto;
-        margin-bottom: 1rem;
+    #padres-card #padres-novia-label-2,
+    #padres-card #padres-novia-label-3,
+    #padres-card #padres-novia-label-5,
+    #padres-card #padres-novio-label-1 {
+        font-size: 2em;
     }
 
     #padres-decoration #padres-linea-l,
@@ -1135,7 +1123,7 @@ img {
     #vestuario-card #vestuario-title,
     #galeria-card #galeria-title,
     #regalos-card #regalos-title,
-    #regalos-card #regalos-button {
+    #regalos-card .regalos-button {
         font-size: 1.5rem;
         margin: 1rem 0;
     }
