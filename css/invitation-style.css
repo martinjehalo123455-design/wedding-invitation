@@ -72,6 +72,7 @@ main {
     box-shadow: 0px 0px 30px 3px rgb(0 0 0 / 50%);
     margin-left: auto;
     margin-right: auto;
+    background-image: url(../img/textura-papel.jpg);
 }   
 
 a {
@@ -117,10 +118,18 @@ a {
 }
 
 
+.thin-card {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+}
 
-
-
-
+.thin-card .card {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
@@ -154,6 +163,8 @@ a {
 
 /* --------------- HEADER CARD -------------- */
 #header-card {
+    position: relative;
+    z-index: 999;
     min-height: 100vh;
     width: 100%;
     margin: 0;
@@ -231,13 +242,13 @@ a {
 
 
 /* ---------- NOMBRES ESPOSOS CARD ------------ */
-
 #nombres-esposos-card {
     text-align: center;
+    min-height: 100vh;
     margin: 0;
-    margin-bottom: 5rem;
     padding: 0 3rem;
     color: var(--gris);
+    background-color: var(--beigegpt);
 }
 
 #nombres-esposos-card #logo-ze {
@@ -285,17 +296,17 @@ a {
 
 
 #padres-card {
+    height: fit-content;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto auto 1fr auto;
     grid-template-columns: 90%;
     align-items: center;
     justify-content: center;
-    height: fit-content;
-    min-height: 100vh;
     text-align: center;
     background-color: var(--terracota-oscuro);
     color: var(--beigegpt);
-    padding: 0;
+    padding: 3rem 0;
 }
 
 #padres-card #nombres-padres-novia,
@@ -355,6 +366,29 @@ a {
 
 
 
+.foto {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto-gradient {
+    height: inherit;
+    background: linear-gradient(
+        hsla(50, 50%, 90%, 1),
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        hsla(50, 50%, 90%, 1)
+    );
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 
@@ -370,6 +404,9 @@ a {
     align-content: center;
     background-color: var(--olivogpt);
     width: 100%;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 0 10px 10px rgba(245,241,232, 1);
 }
 
 #timer-card #timer-decoration {
@@ -454,7 +491,6 @@ a {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0;
-    width: 100%;
     min-height: 70rem;
     padding: 5rem;
     margin: 0 auto;
@@ -463,16 +499,14 @@ a {
     text-align: center;
 }
 
-#padres-card {
-    padding: 3rem 0;
-}
-
 #galeria-card {
     grid-template-rows: auto auto;
     gap: 3rem;
     padding: 0;
     position: relative;
     text-align: center;
+    background-color: var(--beigegpt);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .5);
 }
 
 #vestuario-card {
@@ -483,7 +517,7 @@ a {
 
 #ceremonia-card {
     background-color: var(--terracora-darkclay);
-    color: white;
+    color: white;  
 }
 
 #regalos-card {
@@ -492,6 +526,7 @@ a {
     min-height: fit-content;
     background-color: var(--olivogpt);
     color: white;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .3);
 }
 
 #ceremonia-card .icon,
@@ -645,26 +680,6 @@ a {
 
 /* --------------- GALERIA CARD -------------- */
 
-.foto {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-.foto-gradient {
-    width: inherit;
-    height: inherit;
-    background: linear-gradient(
-        hsla(50, 50%, 90%, 1),
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        hsla(50, 50%, 90%, 1)
-    );
-}
 
 /* background-image de #foto-1 y #foto-2 se asigna vía JS (ver animations.js)
    cuando la sección entra al viewport, para diferir su carga */
@@ -985,7 +1000,7 @@ img {
 
 @media (max-width: 500px) {
     main {
-        width: 95%;
+        width: 100%;
     }
 
     #header-card-index #sobre-closed-img {
@@ -1019,7 +1034,6 @@ img {
 
     #nombres-esposos-card {
         height: 25rem;
-        margin-bottom: 4rem;
     }
 
     #nombres-esposos-card p {
@@ -1046,19 +1060,6 @@ img {
     #padres-card #padres-novia-label-5,
     #padres-card #padres-novio-label-1 {
         font-size: 2em;
-    }
-
-    #padres-decoration #padres-linea-l,
-    #padres-decoration #padres-linea-r {
-        display: inline-block;
-        height: 1.5rem;
-        width: .12rem;
-    }
-
-    #padres-decoration #padres-punto {
-        width: .25rem;
-        height: .25rem;
-        margin: .5rem auto;
     }
 
     #divider-1 {
