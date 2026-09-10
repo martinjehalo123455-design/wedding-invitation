@@ -841,6 +841,24 @@ img {
     transform: scale(1.1);
 }
 
+#bank-info-card {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: #f5f1e8;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
+}
+
+#bank-info-card:target {
+    display: block;
+}
+
+#bank-info-card img {
+    width: 95%;
+    height: auto;
+}
+
 
 
 /* ==================================================================
