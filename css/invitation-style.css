@@ -274,13 +274,15 @@ img {
 }
 
 #footer-card {
-    width: inherit;
+    width: 80%;
     min-height: 10rem;
     max-height: 20rem;
     font-family: 'fuente5';
     font-size: 1.2em;
     color: var(--dorado);
     background-color: var(--olivogpt2);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -865,6 +867,11 @@ img {
    RESPONSIVE - PHONE / TABLET
    ================================================================== */
 @media (max-width: 900px) {
+
+    main {
+        width: 100%;
+    }
+
     /* HEADER CARD */
     #header-card #corazon-bordado-img {
         width: 100%;
@@ -971,6 +978,8 @@ img {
 
     #regalos-card {
         min-height: 100vh;
+        grid-template-columns: 90%;
+        justify-content: center;
     }
 
     #ceremonia-card .icon,
@@ -1056,6 +1065,10 @@ img {
 
     #regalos-card .regalos-button:hover {
         transform: scale(1.1);
+    }
+
+    #footer-card {
+        width: 100%;
     }
 }
 
@@ -1273,5 +1286,9 @@ img {
 
     #regalos-card .regalos-button:hover {
         transform: scale(1.1);
+    }
+
+    #footer-card {
+        width: 100%;
     }
 }
