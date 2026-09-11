@@ -53,6 +53,9 @@
     --terracotagpt: #cb997e; /* Terracota */
     --terracota-oscuro: #5c280c;
     --terracora-darkclay: #7A3B2E;
+    --terracota-spicedbruck: #8c3E2f;
+    --terracota-wine: #6E2F26;
+    --terracota-burn: #A04A32;
     --forestolive: #4f5d2f;
     --olive:#808000;
     --olivogpt: #6b705c; /* Títulos */
@@ -263,26 +266,17 @@ img {
 #vestuario-card,
 #galeria-card,
 #regalos-card,
-#footer-card {
+#footer-card,
+#confirmation-card,
+#confirmation-form {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
     align-content: center;
+    justify-content: center;
     text-align: center;
     margin: 0;
     padding: 0;
-}
-
-#footer-card {
-    width: 80%;
-    min-height: 10rem;
-    max-height: 20rem;
-    font-family: 'fuente5';
-    font-size: 1.2em;
-    color: var(--dorado);
-    background-color: var(--olivogpt2);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -578,7 +572,8 @@ img {
 #ceremonia-card #ceremonia-title,
 #vestuario-card #vestuario-title,
 #galeria-card #galeria-title,
-#regalos-card #regalos-title {
+#regalos-card #regalos-title,
+#confirmation-card #confirmation-title {
     font-family: 'fuente1';
     font-size: 3em;
 }
@@ -793,6 +788,18 @@ img {
     height: 30rem;
 }
 
+#footer-card {
+    width: 80%;
+    min-height: 10rem;
+    max-height: 20rem;
+    font-family: 'fuente5';
+    font-size: 1.2em;
+    color: var(--dorado);
+    background-color: var(--olivogpt2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* ==================================================================
    REGALOS-CARD
@@ -802,6 +809,7 @@ img {
 #regalos-card {
     min-height: 70rem;
     grid-template-rows: auto auto auto 1fr auto auto;
+    grid-template-columns: 90%;
     gap: 2rem;
     padding: 15rem 0;
     min-height: fit-content;
@@ -838,7 +846,8 @@ img {
     color: var(--dorado);
 }
 
-#regalos-card .regalos-button {
+#regalos-card .regalos-button,
+#confirmation-form #form-button {
     margin: 0;
     margin-top: 2rem;
     width: 90%;
@@ -870,6 +879,65 @@ img {
 #bank-info-card img {
     width: 95%;
     height: auto;
+}
+
+#confirmation-card {
+    background-color: var(--terracora-darkclay);
+    color: beige;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 0;
+    grid-template-columns: 90%;
+    border-radius: 40% 40% 0 0;
+}
+
+#confirmation-card #confirmation-label-1,
+#confirmation-card #confirmation-label-2 {
+    font-family: 'fuente3';
+    font-size: 4em;
+}
+
+#confirmation-card #confirmation-radio {
+    height: 3rem;
+    width: 3rem;
+}
+
+#confirmation-card #confirmation-form {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 70%;
+    gap: 1rem;
+    background-color: var(--terracota-oscuro);
+    padding: 3rem 0;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 00px 3px 5px rgba(0,0,0,.3);
+}
+
+#confirmation-form .form-input-text {
+    border: 0;
+    border-radius: 2rem;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--terracota-wine);
+}
+
+#confirmation-form .form-input-text::placeholder,
+#confirmation-form #form-input-text::placeholder {
+    color: #E8D8C3;
+    font-size: 2em;
+    font-family: 'fuente4';
+    text-align: center;
+}
+
+
+#confirmation-form #form-button {
+    width: 100%;
+    background-color: var(--terracora-darkclay);
+    border: 0;
+    margin: 3rem 0;
 }
 
 
