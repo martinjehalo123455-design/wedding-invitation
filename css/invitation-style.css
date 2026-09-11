@@ -884,11 +884,10 @@ img {
     background-color: var(--terracora-darkclay);
     color: beige;
     grid-template-rows: auto auto auto;
+    grid-template-columns: 90%;
     width: 100%;
     min-height: 30rem;
     padding: 5rem 0;
-    grid-template-columns: 90%;
-    border-radius: 45% 45% 0 0;
     margin-top: 1rem;
 }
 
@@ -1201,7 +1200,8 @@ img {
 
     /* PADRES CARD */
     #padres-card #padres-novia-title,
-    #padres-card #padres-novio-title {
+    #padres-card #padres-novio-title,
+    #confirmation-card #confirmation-title {
         font-size: 1.5em;
     }
 
@@ -1213,7 +1213,9 @@ img {
     #padres-card #padres-novia-label-2,
     #padres-card #padres-novia-label-3,
     #padres-card #padres-novia-label-5,
-    #padres-card #padres-novio-label-1 {
+    #padres-card #padres-novio-label-1,
+    #confirmation-card #confirmation-label-1,
+    #confirmation-card #confirmation-label-2 {
         font-size: 2em;
     }
 
@@ -1251,10 +1253,25 @@ img {
     /* CEREMONIA / VESTUARIO / REGALOS CARDS */
     #ceremonia-card,
     #vestuario-card,
-    #regalos-card {
+    #regalos-card,
+    #confimation-card {
         height: 100vh;
         max-height: 10rem;
         padding: 3rem;
+    }
+
+    #confirmation-form {
+        height: 5rem;
+    }
+
+    #confirmation-label-2 #confirmation-radio {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    #confirmation-form .form-input-text {
+        height: 2rem;
+        font-size: 1em;
     }
 
     #vestuario-card {
@@ -1280,7 +1297,8 @@ img {
     #vestuario-card #vestuario-title,
     #galeria-card #galeria-title,
     #regalos-card #regalos-title,
-    #regalos-card .regalos-button {
+    #regalos-card .regalos-button,
+    #confirmation-form #form-button {
         font-size: 1.5rem;
         margin: 1rem 0;
     }
@@ -1292,7 +1310,9 @@ img {
     #regalos-card #regalos-label-2,
     #regalos-card #regalos-label-3,
     #regalos-card #regalos-label-4,
-    #regalos-card #regalos-label-5 {
+    #regalos-card #regalos-label-5,
+    #confirmation-card #confirmation-label-1,
+    #confirmation-card #confirmation-label-2 {
         font-size: 1.5em;
         margin: 0;
     }
@@ -1369,5 +1389,46 @@ img {
 
     #footer-card {
         width: 100%;
+    }
+
+
+    #confirmation-card {
+        grid-template-rows: auto 10rem auto;
+        grid-template-columns: 95%;
+        min-height: 100vh;
+        height: fit-content;
+        padding: 1rem 0;
+    }
+
+    #confirmation-card #confirmation-label-1,
+    #confirmation-card #confirmation-label-2,
+    #confirmation-form #confirmation-form-label-1 {
+        font-family: 'fuente3';
+        font-size: 2em;
+    }
+
+    #confirmation-card #confirmation-radio {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    #confirmation-card #confirmation-form {
+        width: 100%;
+        height: 30rem;
+        margin-top: 2rem;
+        padding: 3rem;
+    }
+
+    #confirmation-form .form-input-text,
+    #confirmation-form .form-input-text::placeholder  {
+        width: 100%;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    #confirmation-form #form-button {
+        width: 100%;
+        height: 3rem;
+        font-size: 1em;
     }
 }

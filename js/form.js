@@ -22,7 +22,7 @@ formulario.addEventListener("submit", function(e) {
     mensaje:this.mensaje.value,
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbyd8-c9hDouIc48gHoB-LIdRLAVbe2OHj-ThNL205xC4u1MNKhCKZn2rZcdoEjubw/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbza0SlXm2NoFJFc8MOvLYeQqVtJFn_tgVwzSfXLcYWj4ADsqKWAljemFYnrhNIIgP4/exechttps://script.google.com/macros/s/AKfycbzJg0hLklNMpHXAiyu0mCthY6tXY6ZLx9_sAe38nBGp8LbiXurCipgE7p6iJwVXFD0/exec", {
     method: "POST",
     body: JSON.stringify(data)
   })
