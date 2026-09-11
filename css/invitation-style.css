@@ -267,8 +267,7 @@ img {
 #galeria-card,
 #regalos-card,
 #footer-card,
-#confirmation-card,
-#confirmation-form {
+#confirmation-card {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
@@ -886,10 +885,11 @@ img {
     color: beige;
     grid-template-rows: auto auto auto;
     width: 100%;
-    min-height: 100vh;
+    min-height: 30rem;
     padding: 5rem 0;
     grid-template-columns: 90%;
-    border-radius: 40% 40% 0 0;
+    border-radius: 45% 45% 0 0;
+    margin-top: 1rem;
 }
 
 #confirmation-card #confirmation-label-1,
@@ -904,38 +904,38 @@ img {
 }
 
 #confirmation-card #confirmation-form {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 45rem;
+    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: 70%;
     gap: 1rem;
     background-color: var(--terracota-oscuro);
-    padding: 3rem 0;
+    padding: 3rem 5rem;
+    justify-content: flex-end;
+    align-items: center;
     border-radius: 50% 50% 0 0;
-    box-shadow: 0 00px 3px 5px rgba(0,0,0,.3);
 }
 
-#confirmation-form .form-input-text {
+#confirmation-form .form-input-text,
+#confirmation-form .form-input-text::placeholder  {
+    text-align: center;
     border: 0;
     border-radius: 2rem;
-    width: 100%;
+    width: 90%;
     height: 4rem;
     background-color: var(--terracota-wine);
-}
-
-#confirmation-form .form-input-text::placeholder,
-#confirmation-form #form-input-text::placeholder {
-    color: #E8D8C3;
-    font-size: 2em;
+    color: var(--beige1);
+    font-size: 1.5rem;
     font-family: 'fuente4';
-    text-align: center;
 }
-
 
 #confirmation-form #form-button {
-    width: 100%;
-    background-color: var(--terracora-darkclay);
+    width: 90%;
+    height: 6rem;
+    background-color: var(--terracota-spicedbruck);
     border: 0;
     margin: 3rem 0;
 }

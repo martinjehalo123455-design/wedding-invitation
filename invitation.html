@@ -196,12 +196,14 @@
             <img src="img/bank-info.svg" alt="">
         </section>
         <section id="confirmation-card">
-            <h3 id="confirmation-title">CONFIRMAR ASISTENCIA</h3>
-            <p class="form-label" id="confirmation-label-1">Por favor, confirma tu asistencia.</p>
+            <div id="confirmation-card-box-1">
+                <h3 id="confirmation-title">CONFIRMAR ASISTENCIA</h3>
+                <p class="form-label" id="confirmation-label-1">Por favor, confirma tu asistencia</p>
+            </div>
             <label class="form-label" id="confirmation-label-2"><input type="checkbox" id="confirmation-radio"> ¡Sí, allí estaré!</label>
             <form id="confirmation-form">
-                <input class="form-input-text" type="text" name="nombre" placeholder="Apellidos" required>
-                <input class="form-input-text" type="text" name="nombre" placeholder="Nombre completo" required>
+                <input class="form-input-text" type="text" name="apellidos" placeholder="Apellidos" required>
+                <input class="form-input-text" type="text" name="nombre" placeholder="Nombre(s)" required>
                 <input class="form-input-text" type="text" name="alergias" placeholder="Intolerancias o alergias alimentarias" required>
                 <textarea class="form-input-text" name="mensaje" placeholder="Mensaje para los novios (opcional)"></textarea>
                 <button id="form-button" type="submit">ENVIAR RESPUESTA</button>
@@ -213,5 +215,6 @@
     </footer>
     <script src="js/temp.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
