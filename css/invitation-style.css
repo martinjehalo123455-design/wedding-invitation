@@ -893,7 +893,8 @@ img {
 }
 
 #confirmation-card #confirmation-label-1,
-#confirmation-card #confirmation-label-2 {
+#confirmation-card #confirmation-label-2,
+#confirmation-form #confirmation-form-label-1 {
     font-family: 'fuente3';
     font-size: 4em;
 }
