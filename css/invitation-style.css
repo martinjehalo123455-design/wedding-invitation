@@ -904,7 +904,7 @@ img {
 }
 
 #confirmation-card #confirmation-form {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
     height: 45rem;

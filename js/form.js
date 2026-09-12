@@ -8,7 +8,7 @@ function confirmed() {
     formulario.remove();
     confirmation_label2.remove();
     confirmation_label1.innerHTML = "";
-    confirmation_label1.innerText = "!Gracias por confirmar tu asistencia!"
+    confirmation_label1.innerText = "¡Gracias por confirmar tu asistencia!"
 }
 
 // Se le agrega un evento al formulario
@@ -22,7 +22,7 @@ formulario.addEventListener("submit", function(e) {
     mensaje:this.mensaje.value,
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbza0SlXm2NoFJFc8MOvLYeQqVtJFn_tgVwzSfXLcYWj4ADsqKWAljemFYnrhNIIgP4/exechttps://script.google.com/macros/s/AKfycbzJg0hLklNMpHXAiyu0mCthY6tXY6ZLx9_sAe38nBGp8LbiXurCipgE7p6iJwVXFD0/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbwViBfoY1ZASWarcTZqPEykYRriYjU4NrWJGuQpHVEVzovr1F_Z-YUe7nczDSh0weE/exec", {
     method: "POST",
     body: JSON.stringify(data)
   })
